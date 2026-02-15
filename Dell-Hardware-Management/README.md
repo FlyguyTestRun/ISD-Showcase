@@ -8,7 +8,7 @@ PowerShell automation for Dell PowerEdge server management via iDRAC REST API, o
 
 This folder contains PowerShell modules for automating Dell server hardware management tasks including health monitoring, firmware lifecycle management, and proactive maintenance. Designed specifically for school district IT environments where:
 
-- **Downtime must occur during non-instructional hours** (after 3 PM, weekends, breaks)
+- **Downtime must occur during non-instructional hours** (after hours 6 PM, weekends, breaks)
 - **Hardware failures impact student learning** (SIS, file servers, domain controllers)
 - **Firmware updates require careful change control** (aligned with school calendar)
 - **Remote server management is critical** (distributed campuses, limited on-site staff)
