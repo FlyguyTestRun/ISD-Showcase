@@ -109,8 +109,8 @@ Senior Systems Engineer with 22+ years of progressive IT experience designing, i
 
 ## Education
 
-**Bachelor of Arts | University of Texas at Arlington**
-**Associate of Arts | Tarrant County College**
+**Bachelors | University of Texas at Arlington**
+**Associate of science | Tarrant County College**
 
 ---
 
