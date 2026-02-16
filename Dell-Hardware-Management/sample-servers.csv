@@ -1,0 +1,16 @@
+ServerName,Model,ServiceTag,iDRACIP,Location,HealthStatus,PowerState,CPUTemp,MemoryHealth,StorageHealth,FirmwareVersion
+SRV-DC01,PowerEdge R650,ABC1234,10.10.1.10,Main-DataCenter,Healthy,On,42,OK,OK,2.85.85.85
+SRV-DC02,PowerEdge R650,ABC1235,10.10.1.11,Main-DataCenter,Healthy,On,45,OK,OK,2.85.85.85
+SRV-FS01,PowerEdge R740xd,DEF5678,10.10.1.20,Main-DataCenter,Healthy,On,48,OK,OK,2.82.82.82
+SRV-FS02,PowerEdge R740xd,DEF5679,10.10.1.21,Main-DataCenter,Healthy,On,46,OK,OK,2.82.82.82
+SRV-SQL01,PowerEdge R750,GHI9012,10.10.1.30,Main-DataCenter,Warning,On,52,OK,Degraded,2.85.85.85
+SRV-SQL02,PowerEdge R750,GHI9013,10.10.1.31,Main-DataCenter,Healthy,On,47,OK,OK,2.85.85.85
+SRV-VEEAM01,PowerEdge R640,JKL3456,10.10.1.40,Main-DataCenter,Healthy,On,44,OK,OK,2.80.80.80
+SRV-VEEAM02,PowerEdge R640,JKL3457,10.10.1.41,Backup-DataCenter,Healthy,On,43,OK,OK,2.80.80.80
+SRV-WEB01,PowerEdge R440,MNO7890,10.10.1.50,Main-DataCenter,Healthy,On,39,OK,OK,2.83.83.83
+SRV-WEB02,PowerEdge R440,MNO7891,10.10.1.51,Main-DataCenter,Healthy,On,41,OK,OK,2.83.83.83
+SRV-HV01,PowerEdge R650,PQR1122,10.10.1.60,Main-DataCenter,Healthy,On,50,OK,OK,2.85.85.85
+SRV-HV02,PowerEdge R650,PQR1123,10.10.1.61,Main-DataCenter,Healthy,On,49,OK,OK,2.85.85.85
+SRV-HV03,PowerEdge R650,PQR1124,10.10.1.62,Main-DataCenter,Critical,On,68,Warning,OK,2.81.81.81
+SRV-PRINT01,PowerEdge R340,STU3344,10.10.1.70,Main-DataCenter,Healthy,On,38,OK,OK,2.79.79.79
+SRV-DHCP01,PowerEdge R340,VWX5566,10.10.1.80,Main-DataCenter,Healthy,On,40,OK,OK,2.79.79.79

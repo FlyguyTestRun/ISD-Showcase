@@ -6,7 +6,7 @@ param(
     [string]$CsvPath
 )
 
-Import-Module "$PSScriptRoot/../modules/KISDIdentity.psm1" -Force
+Import-Module "$PSScriptRoot/KISDIdentity.psm1" -Force
 
 if (-not (Test-Path $CsvPath)) {
     Write-Error "CSV file not found: $CsvPath"
