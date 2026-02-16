@@ -1,5 +1,5 @@
 # K-12 Identity & Access Management Automation
-## Student/Staff Lifecycle Management for Keller ISD
+## Student/Staff Lifecycle Management
 
 **Author:** Bryan Shaw
 **Purpose:** Automated identity provisioning for K-12 educational environments
@@ -24,8 +24,6 @@ This folder contains PowerShell automation for managing student and staff identi
 
 ### 1. `KISDIdentity.psm1`
 **Purpose:** Core PowerShell module for Keller ISD identity management
-
-**Functions:**
 
 #### `New-KISDStudentAccount`
 Creates student Active Directory accounts with automated OU placement.
