@@ -1,10 +1,10 @@
-# Keller ISD Systems Engineering Portfolio
+# ISD Systems Engineering Portfolio
 
 This repository demonstrates technical capabilities directly relevant to the **Senior Systems Engineer (Microsoft)** position at Keller ISD, including enterprise Microsoft infrastructure administration, PowerShell automation, backup/disaster recovery, hardware management, and K-12 educational technology integration.
 
 ---
 
-## Featured: KISD Identity Management Automation
+## Featured: ISD Identity Management Automation
 
 I developed a PowerShell-based student/staff lifecycle management system using Keller ISD naming conventions (`students.keller.edu`), including:
 
