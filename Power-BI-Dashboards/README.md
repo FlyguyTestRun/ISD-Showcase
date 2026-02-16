@@ -1,6 +1,6 @@
 # Power BI Dashboards for K-12 IT Infrastructure
 
-**Purpose:** Demonstrate data visualization and operational analytics capabilities for Keller ISD Senior Systems Engineer position.
+**Purpose:** Demonstrate data visualization and operational analytics capabilities for K-12 school district environments.
 
 **Created by:** Bryan Shaw | February 2026
 
@@ -8,46 +8,93 @@
 
 ## 📋 Overview
 
-This folder contains three professional Power BI dashboards that showcase IT infrastructure monitoring, student enrollment analytics, and network operations visibility. Each dashboard demonstrates the integration of PowerShell automation with data-driven insights to provide leadership visibility into technology operations.
+This folder contains three professional Power BI dashboards showcasing IT infrastructure monitoring, student enrollment analytics, and network operations visibility. Each dashboard integrates PowerShell automation with data-driven insights to provide leadership visibility into technology operations.
 
-**Strategic Alignment:**
-- ✅ **Keller ISD Microsoft Migration:** Monitoring Azure AD, M365, and Windows endpoints
-- ✅ **Data Compliance:** FERPA audit trails and compliance reporting (Jamie Yates)
-- ✅ **Infrastructure Stability:** Proactive monitoring and capacity planning (Sean Ducar)
-- ✅ **Cost Optimization:** Automation reduces manual reporting overhead
+**Key Capabilities Demonstrated:**
+- ✅ **Operational Analytics:** Real-time infrastructure health monitoring
+- ✅ **Compliance Reporting:** FERPA audit trails and endpoint compliance tracking
+- ✅ **Capacity Planning:** Enrollment trends and network utilization forecasting
+- ✅ **Data Integration:** PowerShell automation feeds Power BI visualizations
 
 ---
 
 ## 📊 Dashboard Portfolio
 
 ### 1. IT Infrastructure Health Dashboard
-**[View Details](./IT-Infrastructure-Health/)**
+**[View Dashboard (PDF)](./IT-Infrastructure-Health/IT-Infrastructure-Dashboard.pdf)** | **[View Details](./IT-Infrastructure-Health/)**
+
+![IT Infrastructure Health Dashboard](./IT-Infrastructure-Health/IT-Infrastructure-Dashboard.pdf)
 
 **Focus:** Active Directory, Backup/DR, Endpoint Compliance
 
 **Key Metrics:**
 - 2,450 user accounts monitored
-- 95%+ backup success rate
-- 92% endpoint compliance rate
+- 95.83% backup success rate
+- 90.49% endpoint compliance rate
 - 90 days of historical trending
 
 **Business Value:**
 - Proactive issue detection before service impact
-- FERPA compliance visibility for audits
+- Compliance visibility for audits and reporting
 - Automated alerting for failed backups
-- Password expiration tracking prevents lockouts
+- Password expiration tracking prevents account lockouts
 
 **Data Sources:**
-- `active-directory-health.csv` (90 records)
-- `backup-job-status.csv` (240 records)
-- `endpoint-compliance.csv` (90 records)
-
-**Estimated Build Time:** 4-6 hours
+- Active Directory health metrics (90 days)
+- Veeam backup job status (240 job runs)
+- Endpoint compliance tracking (90 days)
 
 ---
 
 ### 2. Student Enrollment Analytics Dashboard
-**[View Details](./Student-Enrollment-Analytics/)**
+**[View Dashboard (PDF)](./Student-Enrollment-Analytics/Student-Enrollment-Dashboard.pdf)** | **[View Details](./Student-Enrollment-Analytics/)**
+
+![Student Enrollment Analytics Dashboard](./Student-Enrollment-Analytics/Student-Enrollment-Dashboard.pdf)
+
+**Focus:** Enrollment trends, Account provisioning, FERPA compliance
+
+**Key Metrics:**
+- 365 days of enrollment trend data
+- 2.13 average new accounts per day
+- 98.51% FERPA compliance rate
+- Seasonal enrollment pattern identification
+
+**Business Value:**
+- Capacity planning for peak provisioning periods (August/September spikes)
+- Account lifecycle automation efficiency tracking
+- FERPA audit trail completeness verification
+- Integration with K-12 identity management automation
+
+**Data Sources:**
+- Student enrollment trends (1,460 records across 4 grade levels)
+- Account provisioning activity (new/deprovisioned accounts)
+- FERPA compliance metrics
+
+---
+
+### 3. Network Infrastructure Monitoring Dashboard
+**[View Dashboard (PDF)](./Network-Infrastructure-Monitoring/Network-Infrastructure-Dashboard.pdf)** | **[View Details](./Network-Infrastructure-Monitoring/)**
+
+![Network Infrastructure Monitoring Dashboard](./Network-Infrastructure-Monitoring/Network-Infrastructure-Dashboard.pdf)
+
+**Focus:** DHCP utilization, Device inventory, Campus connectivity
+
+**Key Metrics:**
+- 439 network devices across 4 campuses
+- 92.26% device health rate
+- 5 VLAN scopes with utilization tracking
+- 30 days of DHCP trend data
+
+**Business Value:**
+- Capacity planning for network growth
+- Proactive device maintenance scheduling
+- CIPA-compliant VLAN segmentation visibility
+- Multi-campus infrastructure oversight
+
+**Data Sources:**
+- DHCP scope utilization (5 VLANs, 30 days)
+- Network device inventory (439 devices)
+- Device health status and campus distribution
 
 **Focus:** Enrollment trends, Account provisioning, FERPA compliance
 
