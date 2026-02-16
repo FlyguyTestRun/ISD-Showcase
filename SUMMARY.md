@@ -107,13 +107,3 @@ Network segmentation and CIPA compliance expertise
 
 ---
 
-### 5. About.md
-Professional biography including:
-- 22+ years Microsoft infrastructure experience
-- Current certifications (AZ-104, MD-102, AZ-800/801)
-- CoreSkills4AI platform engineering work
-- K-12 domain expertise
-- Contact information
-
----
-
