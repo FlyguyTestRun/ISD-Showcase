@@ -337,7 +337,7 @@ This dashboard demonstrates:
    "Student account provisioning error-prone, and time-consuming. Adding visibility into enrollment trends or compliance metrics."
 
 2. **Solution:**
-   "Ghe ISDIdentity PowerShell module to automate provisioning, then created this Power BI dashboard to visualize the data and track compliance."
+   "ISDIdentity PowerShell module to automate provisioning, then created this Power BI dashboard to visualize the data and track compliance."
 
 3. **Technical Integration:**
    "The dashboard pulls from automated PowerShell scripts that generate enrollment metrics daily. It combines my infrastructure automation expertise with data visualization skills."
