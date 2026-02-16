@@ -15,7 +15,7 @@ I developed a PowerShell-based student/staff lifecycle management system using (
 - **Batch student onboarding** from CSV data sources (SIS integration ready)
 - **Password policy enforcement** and account security controls
 
-**Impact:** Reduces account provisioning time from 15 minutes to <1 minute per account, ensures naming consistency across hybrid AD environments, maintains compliance audit trails for educational data governance.
+**Impact:** Reduces account provisioning time per account, ensures naming consistency across hybrid AD environments, maintains compliance audit trails for educational data governance.
 
 **[View KISDIdentity Module →](./K12-Identity-Management/)**
 
