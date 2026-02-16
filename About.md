@@ -64,7 +64,7 @@ Senior Systems Engineer with 22+ years of progressive IT experience designing, i
 **Microsoft Certified:**
 - **AZ-104:** Azure Administrator Associate ✓
 - **MD-102:** Endpoint Administrator (Intune, Windows Client, M365 Apps) ✓
-- **AZ-800/801:** Windows Server Hybrid Administrator Associate (In Progress - Exam Scheduled March 2025)
+- **AZ-800/801:** Windows Server Hybrid 
 
 **Legacy Certifications:**
 - **MCSA:** Microsoft Certified Solutions Associate (Windows Server 2012 - now retired)
