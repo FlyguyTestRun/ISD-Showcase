@@ -38,38 +38,35 @@ Keller-ISD-Showcase/
 
 ### Main README.md
 Professional overview highlighting:
-- KISD Identity Management Automation (featured prominently)
+- KISD Identity Management Automation
 - Veeam Backup & DR Automation
 - Dell iDRAC Hardware Management
 - K-12 Network Segmentation
 - Contact information and credentials
 
 ### 1. K12-Identity-Management/
-**Showcases:** Keller ISD-specific student/staff automation (YOUR COMPETITIVE ADVANTAGE)
+Keller ISD-specific student/staff automation
 
 **Files:**
 - `KISDIdentity.psm1` - PowerShell module with Keller ISD naming conventions (`students.keller.edu`)
 - `New-StudentBatch.ps1` - Batch student account creation from CSV
 - `README.md` - Comprehensive documentation (26 KB)
 
-**Key Highlights:**
-- Uses actual "Keller ISD" naming conventions (demonstrates initiative)
+**Highlights:**
 - Grade-level OUs (9-12) with graduation year tracking
 - FERPA-compliant audit logging
-- Performance metrics: 15 minutes → <1 minute per account
 
 ---
 
 ### 2. Backup-DR-Automation/
-**Showcases:** Veeam expertise (fills critical gap from job analysis)
 
 **Files:**
 - `Veeam-BackupManagement.ps1` - Backup job automation, health checks, reporting (250 lines)
 - `Veeam-DRTesting.ps1` - Comprehensive DR testing procedures (420 lines)
 - `README.md` - K-12 backup/DR best practices (18 KB)
 
-**Key Highlights:**
-- K-12-optimized backup windows (after school hours)
+**Highlights:**
+- K-12-optimized backup windows
 - SIS database protection strategies
 - RTO/RPO calculations for educational environments
 - Summer break maintenance scheduling
@@ -77,14 +74,14 @@ Professional overview highlighting:
 ---
 
 ### 3. Dell-Hardware-Management/
-**Showcases:** Dell iDRAC automation (fills hardware management gap)
+Dell iDRAC automation
 
 **Files:**
 - `iDRAC-HealthCheck.ps1` - Server health monitoring via iDRAC REST API (380 lines)
 - `iDRAC-FirmwareUpdate.ps1` - Firmware lifecycle automation (350 lines)
 - `README.md` - Enterprise server management guide (15 KB)
 
-**Key Highlights:**
+**Highlights:**
 - Out-of-band management for remote campuses
 - Proactive health monitoring (power, thermal, RAID status)
 - Firmware update campaigns during school breaks
@@ -93,14 +90,14 @@ Professional overview highlighting:
 ---
 
 ### 4. K12-Network-Architecture/
-**Showcases:** Network segmentation and CIPA compliance expertise
+Network segmentation and CIPA compliance expertise
 
 **Files:**
 - `KISD-Network-Segmentation.md` - Complete network architecture design (25 KB)
 - `VLAN-Configuration-Template.ps1` - Automated DHCP/VLAN deployment (280 lines)
 - `README.md` - Security architecture documentation (12 KB)
 
-**Key Highlights:**
+**Highlights:**
 - 5-tier VLAN segmentation (Student, Staff, Admin, IoT, Guest)
 - CIPA compliance implementation (DNS filtering, web proxy)
 - Student internet safety (SafeSearch enforcement, content filtering)
@@ -111,7 +108,7 @@ Professional overview highlighting:
 ### 5. About.md
 Professional biography including:
 - 22+ years Microsoft infrastructure experience
-- Current certifications (AZ-104, MD-102, AZ-800/801 in progress)
+- Current certifications (AZ-104, MD-102, AZ-800/801)
 - CoreSkills4AI platform engineering work
 - K-12 domain expertise
 - Contact information
