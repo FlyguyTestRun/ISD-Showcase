@@ -1,12 +1,12 @@
 # About Bryan Shaw
 
-**Senior Systems Engineer | Microsoft Infrastructure Specialist | Technology Advocate**
+**Systems Engineer | Microsoft Infrastructure Specialist | Technology Advocate**
 
 ---
 
 ## Professional Summary
 
-Senior Systems Engineer with 22+ years of progressive IT experience designing, implementing, and supporting enterprise Microsoft infrastructure across diverse industries including legal technology, professional services, and K-12 education. Proven expertise in building secure, scalable systems that reduce operational overhead through automation while maintaining compliance with regulatory requirements (FERPA, HIPAA, PCI-DSS).
+Systems Engineer with 22+ years of progressive IT experience designing, implementing, and supporting enterprise Microsoft infrastructure across diverse industries including legal technology, professional services, and education. Proven expertise in building secure, scalable systems that reduce operational overhead through automation while maintaining compliance with regulatory requirements (FERPA, HIPAA, PCI-DSS).
 
 **Core Competencies:**
 - **Microsoft 365 & Azure:** Exchange Online, SharePoint, Teams, Entra ID (Azure AD), Intune, Conditional Access
@@ -131,7 +131,6 @@ Built PowerShell modules for training and mentoring featrued a "mock" ISD-specif
 - Training students on Intune MAM/MDM standards, using Windows Server and Linux for stability within dockers containers for hands-on labs
 - Implemented observability stacks with (Grafana, Prometheus) for infrastructure monitoring working incorporating industry best standards
 - Built reference architectures and documentation for AI/ML modules on modern workflows with Microsoft ecosystem
-- 
 ---
 
 **What I Bring to Keller ISD:**
