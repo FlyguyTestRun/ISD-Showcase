@@ -1,6 +1,6 @@
-# K-12 Systems Engineering Portfolio
+# K-12 Systems Engineering
 
-This repository demonstrates enterprise Microsoft infrastructure administration, PowerShell automation, data analytics, and educational technology expertise suitable for K-12 school district environments.
+This repository demonstrates enterprise Microsoft infrastructure administration, PowerShell automation, data analytics, and educational technology suitable for K-12 school district environments.
 
 ---
 
@@ -16,7 +16,7 @@ PowerShell-based student/staff lifecycle management system with automated Azure 
 - **Batch student onboarding** from CSV data sources (SIS integration ready)
 - **Password policy enforcement** and account security controls
 
-**Impact:** Reduces account provisioning time from 15 minutes to under 1 minute per account, ensures naming consistency across hybrid AD environments, maintains compliance audit trails for educational data governance.
+**Impact:** Reduces account provisioning time to under 1 minute per account, ensures naming consistency across hybrid AD environments, maintains compliance audit trails for educational data governance.
 
 ---
 
@@ -99,9 +99,9 @@ Security architecture for educational environments:
 ## About
 
 **Bryan Shaw**
-22+ years enterprise IT experience | Microsoft Certified (AZ-104, MD-102, pursuing AZ-800/801) | K-12 technology specialist
+22+ years enterprise IT experience | Microsoft Certified (AZ-104, MD-102, AZ-800/801) | K-12 technology specialist
 
-Experienced systems engineer with expertise in Microsoft enterprise infrastructure, PowerShell automation, data analytics, and educational technology. Background includes designing secure, scalable systems for professional services, legal technology, and K-12 educational environments. Proven ability to reduce operational overhead through automation while maintaining security, compliance, and reliability.
+Experienced systems engineer with expertise in Microsoft enterprise infrastructure, PowerShell automation, data analytics, and educational technology. Background includes designing secure, scalable systems for professional services, legal technology, and consulting in sever sectors and secure data environments. Proven ability to reduce operational overhead through automation while maintaining security, compliance, and reliability.
 
 **Contact:**
 📧 BryanJShaw@gmail.com

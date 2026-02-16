@@ -117,9 +117,3 @@ Professional biography including:
 
 ---
 
-
-
-
----
-
-**NEXT ACTION:** Upload to GitHub and wait 3-5 days before sending email to Sean Ducar
