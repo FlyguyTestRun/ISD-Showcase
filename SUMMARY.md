@@ -1,6 +1,8 @@
 # Keller-ISD-Showcase Repository Summary
 
-Targeted demonstration for Keller ISD Senior Systems Engineer position, I recreated this from training modules for teaching industry standard protocols. Sean this repository is a demonstration of understanding based on the best practices it would need to be tailored to district specified protocols (I know these are standards the district is already implementing). 
+Targeted demonstration for Keller ISD Senior Systems Engineer position, I recreated this from training modules for teaching industry standard protocols. 
+
+*Sean this repository is a demonstration of understanding based on the best practices it would need to be tailored to district specified protocols (I know these are standards the district is already implementing).*
 
 Thank you for your time and I look forward to discussing further. 
 
