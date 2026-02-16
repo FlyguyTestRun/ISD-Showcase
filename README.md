@@ -1,6 +1,6 @@
 # K-12 Systems Engineering
 
-This repository demonstrates enterprise Microsoft infrastructure administration, PowerShell automation, data analytics, and educational technology expertise suitable for K-12 school district environments.
+This repository demonstrates enterprise Microsoft infrastructure administration, PowerShell automation, data analytics, and educational technology suitable for K-12 school district environments.
 
 ---
 
