@@ -6,7 +6,7 @@ This repository demonstrates technical capabilities directly relevant to the **S
 
 ## Featured: ISD Identity Management Automation
 
-I developed a PowerShell-based student/staff lifecycle management system using Keller ISD naming conventions (`students.keller.edu`), including:
+I developed a PowerShell-based student/staff lifecycle management system using (`students.keller.edu`), including:
 
 - **Automated Azure AD/on-premises AD account provisioning** with grade-level and role-based organizational units
 - **Grade-level OU structure** for students (9-12) with automatic graduation year tracking
