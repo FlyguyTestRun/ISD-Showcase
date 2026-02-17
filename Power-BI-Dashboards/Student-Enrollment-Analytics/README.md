@@ -273,8 +273,8 @@ Automated audit trail generation via PowerShell module
 When presenting this dashboard:
 
 1. **Automation Impact:**
-   - "The KISDIdentity PowerShell module provisions accounts in <1 minute vs. 15 minutes manually"
-   - "Automated account creation during August enrollment surge handles 300+ accounts seamlessly"
+   - "The KISDIdentity PowerShell module provisions accounts in <1 minute"
+   - "Automated account creation during August enrollment surge handles 3000+ accounts seamlessly"
 
 2. **Seasonal Intelligence:**
    - "The dashboard shows expected spikes in August (new students) and May (graduations)"
@@ -334,10 +334,10 @@ This dashboard demonstrates:
 **If asked about this dashboard:**
 
 1. **Problem Statement:**
-   "Student account provisioning was manual, error-prone, and time-consuming. No visibility into enrollment trends or compliance metrics."
+   "Student account provisioning error-prone, and time-consuming. Adding visibility into enrollment trends or compliance metrics."
 
 2. **Solution:**
-   "I built the KISDIdentity PowerShell module to automate provisioning, then created this Power BI dashboard to visualize the data and track compliance."
+   "ISDIdentity PowerShell module to automate provisioning, then created this Power BI dashboard to visualize the data and track compliance."
 
 3. **Technical Integration:**
    "The dashboard pulls from automated PowerShell scripts that generate enrollment metrics daily. It combines my infrastructure automation expertise with data visualization skills."
@@ -361,8 +361,6 @@ The generated sample data includes realistic patterns:
   - Steady state: 0-5 accounts/day
 - **FERPA Compliance:** 98-100% (realistic for well-managed system)
 - **Audit Coverage:** High correlation between operations and log entries
-
-This creates a compelling narrative of a well-run, automated identity management system.
 
 ---
 

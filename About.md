@@ -1,12 +1,12 @@
 # About Bryan Shaw
 
-**Senior Systems Engineer | Microsoft Infrastructure Specialist | K-12 Technology Advocate**
+**Systems Engineer | Microsoft Infrastructure Specialist | Technology Advocate**
 
 ---
 
 ## Professional Summary
 
-Senior Systems Engineer with 22+ years of progressive IT experience designing, implementing, and supporting enterprise Microsoft infrastructure across diverse industries including legal technology, professional services, and K-12 education. Proven expertise in building secure, scalable systems that reduce operational overhead through automation while maintaining compliance with regulatory requirements (FERPA, HIPAA, PCI-DSS).
+Systems Engineer with 22+ years of progressive IT experience designing, implementing, and supporting enterprise Microsoft infrastructure across diverse industries including legal technology, professional services, and education. Proven expertise in building secure, scalable systems that reduce operational overhead through automation while maintaining compliance with regulatory requirements (FERPA, HIPAA, PCI-DSS).
 
 **Core Competencies:**
 - **Microsoft 365 & Azure:** Exchange Online, SharePoint, Teams, Entra ID (Azure AD), Intune, Conditional Access
@@ -19,16 +19,16 @@ Senior Systems Engineer with 22+ years of progressive IT experience designing, i
 
 ## Professional Experience
 
-### CoreSkills4AI | Founder & Technical Lead
+### CoreSkills4AI | Technical Lead
 **2024 - Present | Fort Worth, TX**
 
-- Built enterprise-scale training platform for AI/ML education with Microsoft infrastructure automation
-- Developed K-12 identity management system using Keller ISD naming conventions (`students.keller.edu`)
-- Created Docker-based lab environments integrating Azure AD, Intune, Windows Server, and Microsoft 365
-- Designed FERPA-compliant data governance frameworks for educational AI applications
+- Built enterprise-scale training platform for AI/ML with Microsoft infrastructure automation
+- Created Docker-based lab environments integrating Azure AD, Intune, Windows Server, and Microsoft 365 for training modules
+- Designed protocol-compliant data governance frameworks for industry sectors (legal, healthcare, finacial, construction, etc.)
 - Produced comprehensive technical documentation and training materials for platform operations
+- Designed a agnostic to platform process for AWS, Google and Microsoft PaaS, SaaS and iSaaS systems integration
 
-**Technologies:** Azure AD/Entra ID, Intune, Docker, PowerShell, Python, Grafana, Prometheus, PostgreSQL
+**Technologies:** Azure AD/Entra ID, Intune, Docker, PowerShell, Python, Grafana, Prometheus, PostgreSQL, AWS, Full-Stack end-to-end solutions
 
 ---
 
@@ -49,8 +49,8 @@ Senior Systems Engineer with 22+ years of progressive IT experience designing, i
 ### E&F Legal Production | IT Trial Technician
 **2008 - 2013 | Dallas, TX**
 
-- Provided IT support for high-stakes legal proceedings requiring rapid-deployment infrastructure
-- Built secure, temporary Microsoft server environments for trial war rooms (file servers, document management)
+- Provided IT infrastructure to corporate office and legal support teams for high-stakes legal proceedings requiring rapid-deployment infrastructure
+- Built full-stack secure solutions for Microsoft server environments, VPNs for trial war rooms (file servers, document management)
 - Implemented backup, recovery, and data integrity controls for evidence preservation
 - Trained legal teams on trial presentation technology and document management systems
 - Managed equipment logistics for multi-week trials across Texas and surrounding states
@@ -97,9 +97,9 @@ Senior Systems Engineer with 22+ years of progressive IT experience designing, i
 ### Automation & Development
 - **PowerShell:** Advanced scripting, modules, DSC, remoting, Active Directory automation
 - **Python:** System administration, API integration, data processing
-- **Version Control:** Git, GitHub, documentation-as-code (Markdown)
+- **Version Control:** Git, GitHub, Docker, sandbox enviorments for testing
 
-### K-12 Educational Technology
+### Educational Technology
 - **Student Identity Management:** Active Directory automation, SIS integration, account lifecycle
 - **CIPA Compliance:** DNS filtering (Cisco Umbrella), web content filtering, SafeSearch enforcement
 - **Network Segmentation:** VLAN design for student/staff/admin/IoT/guest networks
@@ -117,30 +117,21 @@ Senior Systems Engineer with 22+ years of progressive IT experience designing, i
 ## Professional Highlights
 
 ### K-12 Identity Management Automation
-Built PowerShell module for Keller ISD-specific student/staff account provisioning:
+Built PowerShell modules for training and mentoring featrued a "mock" ISD-specific student/staff account provisioning:
 - Automated student account creation with grade-level OUs (9-12) and graduation year tracking
 - Role-based staff provisioning (Teacher, Administrator, IT, Support Staff)
 - FERPA-compliant audit logging for all identity operations
 - Batch processing from CSV exports (Student Information System integration)
-- **Impact:** Reduced account provisioning time from 15 minutes to <1 minute per account
+- **Impact:** Reduced account provisioning time per account
 
 ### Enterprise Platform Engineering (CoreSkills4AI)
 - Designed Docker-based training platform with 20+ concurrent VM environments
-- Integrated Microsoft 365, Azure AD, Intune, Windows Server for hands-on labs
-- Implemented observability stack (Grafana, Prometheus) for infrastructure monitoring
-- Built reference architectures and documentation for AI/ML workflows with Microsoft ecosystem
-
-### Multi-Agent Orchestration Platform (MAOP)
-- Architected enterprise data governance system with 6 specialized AI agents
-- Achieved 85% cost reduction vs. traditional AI approaches ($0.003/request vs. $0.02 industry average)
-- Implemented PII masking and human-supervised AI for FERPA/HIPAA compliance
-- 96% production-ready status (109/113 tests passing)
-
+- Classrooms build "in containers" for imaging with instructor/student files for developing certifications to industry standards
+- Integrated Microsoft 365, AWS and Azure AD certifications
+- Training students on Intune MAM/MDM standards, using Windows Server and Linux for stability within dockers containers for hands-on labs
+- Implemented observability stacks with (Grafana, Prometheus) for infrastructure monitoring working incorporating industry best standards
+- Built reference architectures and documentation for AI/ML modules on modern workflows with Microsoft ecosystem
 ---
-
-## Why Keller ISD?
-
-I'm seeking a role where I can combine my enterprise Microsoft infrastructure expertise with a passion for educational technology. My children attend Keller ISD, giving me personal investment in the district's technology success. I've already built identity management automation using Keller ISD naming conventions, demonstrating both technical capability and initiative.
 
 **What I Bring to Keller ISD:**
 - **Deep Microsoft Expertise:** 22 years across Windows Server, Active Directory, Microsoft 365, Azure
