@@ -57,7 +57,7 @@ Automated Power BI dashboards that visualize infrastructure health, enrollment/a
 
 ---
 
-### Backup & DR Automation](./Backup-DR-Automation/)
+### [Backup & DR Automation](./Backup-DR-Automation/)
 Operational scripts and runbooks for backup management, DR readiness checks, and environment recovery planning.
 
 ---
