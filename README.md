@@ -2,7 +2,7 @@
 
 This repository demonstrates enterprise Microsoft systems engineering, network architecture, infrastructure automation, and operational analytics for K-12 district environments.
 
-It is designed as a practical, hands-on showcase for **Systems Engineer (Microsoft)** and **Networking** experience: stable operations, secure architecture, proactive monitoring, documentation quality, and cross-team enablement.
+It is designed as a practical, hands-on showcase for **Systems Engineer (Microsoft)** with **Networking Architecture** experience: stable operations, secure architecture, proactive monitoring, documentation quality, and cross-team enablement.
 
 ---
 
