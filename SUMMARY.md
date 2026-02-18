@@ -1,109 +1,50 @@
-# Keller-ISD-Showcase Repository Summary
+# ISD-Showcase Executive Summary
 
-Targeted demonstration for Keller ISD Senior Systems Engineer position, I recreated this from training modules for teaching industry standard protocols. 
+This portfolio presents practical systems and network engineering work tailored to K-12 technology operations, with a primary emphasis on Microsoft systems engineering and a complementary focus on secure network architecture.
 
-*Sean this repository is a demonstration of understanding based on the best practices it would need to be tailored to district specified protocols (I know these are standards the district is already implementing).*
+## Purpose
 
-Thank you for your time and I look forward to discussing further. 
+Demonstrate senior-level capability in:
+- Infrastructure reliability and automation
+- Security and compliance-aware design (FERPA/CIPA contexts)
+- Operational reporting and KPI visibility
+- Documentation quality and mentoring enablement
 
-~Bryan.
+## Included Demonstrations
 
----
+### 1) Identity & Access Operations
+- PowerShell module for student/staff lifecycle automation
+- Grade-level OU patterns, role-based account logic, audit logging
+- Batch provisioning workflow from CSV datasets
 
+### 2) Backup & Disaster Recovery Automation
+- Veeam operations automation patterns
+- Recovery test workflows and validation concepts
+- K-12-aware operational windows and runbook structure
 
-**Repository Structure:**
-```
-Keller-ISD-Showcase/
-├── README.md (Main portfolio overview)
-├── About.md (Professional bio)
-├── SUMMARY.md (This file)
-├── Test-Syntax.ps1 (Validation script)
-├── K12-Identity-Management/
-│   ├── KISDIdentity.psm1 (161 lines)
-│   ├── New-StudentBatch.ps1 (46 lines)
-│   └── README.md (26 KB)
-├── Backup-DR-Automation/
-│   ├── Veeam-BackupManagement.ps1 (250 lines)
-│   ├── Veeam-DRTesting.ps1 (420 lines)
-│   └── README.md (18 KB)
-├── Dell-Hardware-Management/
-│   ├── iDRAC-HealthCheck.ps1 (380 lines)
-│   ├── iDRAC-FirmwareUpdate.ps1 (350 lines)
-│   └── README.md (15 KB)
-└── K12-Network-Architecture/
-    ├── KISD-Network-Segmentation.md (25 KB)
-    ├── VLAN-Configuration-Template.ps1 (280 lines)
-    └── README.md (12 KB)
-```
+### 3) Server Platform Operations (Dell)
+- iDRAC API-driven health and firmware lifecycle workflows
+- Proactive monitoring model to reduce unplanned outages
 
-## Repository Contents
+### 4) K-12 Network Architecture
+- Five-zone VLAN segmentation approach
+- Access boundary design for student/staff/admin/IoT/guest traffic
+- Compliance-aware filtering and network control model
 
-### Main README.md
-Professional overview highlighting:
-- KISD Identity Management Automation
-- Veeam Backup & DR Automation
-- Dell iDRAC Hardware Management
-- K-12 Network Segmentation
-- Contact information and credentials
+### 5) Operational Analytics (Power BI)
+- Infrastructure health KPI dashboards
+- Enrollment/identity lifecycle trend visualization
+- Network utilization and device health insights
 
-### 1. K12-Identity-Management/
-Keller ISD-specific student/staff automation
+## Why This Matters for Senior Roles
 
-**Files:**
-- `KISDIdentity.psm1` - PowerShell module with Keller ISD naming conventions (`students.keller.edu`)
-- `New-StudentBatch.ps1` - Batch student account creation from CSV
-- `README.md` - Comprehensive documentation (26 KB)
+This repository is intentionally structured to show both:
+1. **Technical depth** (systems + network fundamentals with automation), and  
+2. **Senior-level team impact** (clear docs, reproducible workflows, onboarding-friendly artifacts).
 
-**Highlights:**
-- Grade-level OUs (9-12) with graduation year tracking
-- FERPA-compliant audit logging
+## Quick Navigation
 
----
-
-### 2. Backup-DR-Automation/
-
-**Files:**
-- `Veeam-BackupManagement.ps1` - Backup job automation, health checks, reporting (250 lines)
-- `Veeam-DRTesting.ps1` - Comprehensive DR testing procedures (420 lines)
-- `README.md` - K-12 backup/DR best practices (18 KB)
-
-**Highlights:**
-- K-12-optimized backup windows
-- SIS database protection strategies
-- RTO/RPO calculations for educational environments
-- Summer break maintenance scheduling
-
----
-
-### 3. Dell-Hardware-Management/
-Dell iDRAC automation
-
-**Files:**
-- `iDRAC-HealthCheck.ps1` - Server health monitoring via iDRAC REST API (380 lines)
-- `iDRAC-FirmwareUpdate.ps1` - Firmware lifecycle automation (350 lines)
-- `README.md` - Enterprise server management guide (15 KB)
-
-**Highlights:**
-- Out-of-band management for remote campuses
-- Proactive health monitoring (power, thermal, RAID status)
-- Firmware update campaigns during school breaks
-- K-12 maintenance windows (minimize instructional disruption)
-
----
-
-### 4. K12-Network-Architecture/
-Network segmentation and CIPA compliance expertise
-
-**Files:**
-- `KISD-Network-Segmentation.md` - Complete network architecture design (25 KB)
-- `VLAN-Configuration-Template.ps1` - Automated DHCP/VLAN deployment (280 lines)
-- `README.md` - Security architecture documentation (12 KB)
-
-**Highlights:**
-- 5-tier VLAN segmentation (Student, Staff, Admin, IoT, Guest)
-- CIPA compliance implementation (DNS filtering, web proxy)
-- Student internet safety (SafeSearch enforcement, content filtering)
-- FERPA data protection (administrative systems isolated)
-
----
-
+- [README.md](./README.md)
+- [ROLE-ALIGNMENT.md](./ROLE-ALIGNMENT.md)
+- [TRAINING-ENABLEMENT.md](./TRAINING-ENABLEMENT.md)
+- [About.md](./About.md)
