@@ -31,7 +31,7 @@ It is designed as a practical, hands-on showcase for **Senior Systems Engineer (
 
 ## Portfolio Sections
 
-### [K-12 Identity Management Automation](./K12-Identity-Management/)
+### [Identity Management Automation](./K12-Identity-Management/)
 PowerShell-based student/staff lifecycle management with automated provisioning patterns and FERPA-compliant logging.
 
 **Highlights**
@@ -68,24 +68,11 @@ Secure network architecture and automation templates for student/staff/admin/IoT
 
 ---
 
-## Role Alignment Snapshot
-
-| Job Capability Area | Portfolio Evidence |
-|---|---|
-| Active Directory / Identity lifecycle | `K12-Identity-Management/` |
-| Microsoft platform operations + reporting | `Power-BI-Dashboards/`, `Microsoft-2026-Integrations.md` |
-| Backup, DR, recovery validation | `Backup-DR-Automation/` |
-| Server platform lifecycle (Dell) | `Dell-Hardware-Management/` |
-| Network architecture, segmentation, compliance | `K12-Network-Architecture/` |
-| Team enablement / mentoring evidence | `HOW-TO-*`, `LESSONS-LEARNED.md`, architectural docs |
-
----
-
 ## Technical Focus Areas
 
 **Microsoft Infrastructure:** M365, Entra ID, Intune, Windows Server, ADDS, DNS, DHCP, hybrid identity patterns.
 
-**Network Architecture:** VLAN segmentation, ACL strategy, CIPA controls, K-12 security zoning, multi-campus operational visibility.
+**Network Architecture:** VLAN segmentation, ACL strategy, CIPA controls, K-12 security zoning.
 
 **Automation & Scripting:** PowerShell modules and runbooks, API-based workflows, repeatable data generation, implementation templates.
 
