@@ -2,36 +2,40 @@
 
 This repository demonstrates enterprise Microsoft systems engineering, network architecture, infrastructure automation, and operational analytics for K-12 district environments.
 
-It is designed as a practical, hands-on showcase for **Senior Systems Engineer (Microsoft)** and **Senior Network Engineer** responsibilities: stable operations, secure architecture, proactive monitoring, documentation quality, and cross-team enablement.
+It is designed as a practical, hands-on showcase for **Systems Engineering** and **Networking** responsibilities: stable operations, secure architecture, proactive monitoring, documentation quality, and cross-team enablement. *This repository was built from a CoreSkills training module for enteprise systems migration from full SaaS to hybrid SaaS/PaaS implementations.
+
+## Reasoning for the Module
+
+As a consultant I have migrated several stakeholders to hybrid systems architecture when they reached a growth point that created a cost saving return. Building applications and cost saving ROIs within 3-6 months of execution. This module was built to help guide mid size market companies to cost saving alterntatives.
 
 ---
 
 ## What This Portfolio Demonstrates
 
-### Systems Engineering (Primary Emphasis)
+### Systems Engineering Implementation
 - Microsoft 365 + Entra ID + Intune-aligned operations
 - Windows Server / Active Directory automation and lifecycle management
 - Veeam backup/DR operational runbooks and validation patterns
 - Dell PowerEdge/iDRAC health and firmware lifecycle automation
-- KPI-driven operations reporting with Power BI
+- KPI-driven operations reporting with Graphana and Power BI automated dashboards
 
-### Network Engineering (Secondary Emphasis)
-- K-12 VLAN segmentation and campus network security design
+### With Network Architecture Depth
+- VLAN segmentation with network security design
 - CIPA/FERPA-aware policy architecture and access boundaries
 - DHCP scope planning, network documentation automation, and health reporting
 - Multi-campus network monitoring concepts for capacity and reliability
 
-### Senior-Level Leadership & Mentoring
+### Leadership & Mentoring
 - Step-by-step implementation guides and runbooks
 - Lessons learned and operational guardrails
 - Repeatable demos using synthetic sample data
-- Documentation intended for junior engineer onboarding and support handoff
+- Documentation intended for onboarding and support handoff
 
 ---
 
 ## Portfolio Sections
 
-### [K-12 Identity Management Automation](./K12-Identity-Management/)
+### [Identity Management Automation](./K12-Identity-Management/)
 PowerShell-based student/staff lifecycle management with automated provisioning patterns and FERPA-compliant logging.
 
 **Highlights**
@@ -42,28 +46,28 @@ PowerShell-based student/staff lifecycle management with automated provisioning 
 
 ---
 
-### [Power BI Dashboards for IT Operations](./Power-BI-Dashboards/)
-Power BI dashboards that visualize infrastructure health, enrollment/account trends, and network utilization.
+### [Dashboards for IT Operations](./Power-BI-Dashboards/)
+Automated Power BI dashboards that visualize infrastructure health, enrollment/account trends, and network utilization.
 
 **Highlights**
 - IT health metrics (AD, backup success, endpoint compliance)
 - Enrollment and identity lifecycle visibility
 - Network device and DHCP utilization monitoring
-- Leadership-friendly KPI reporting model
+- Leadership-friendly KPI reporting models
 
 ---
 
-### [Veeam Backup & DR Automation](./Backup-DR-Automation/)
-Operational scripts and runbooks for backup management, DR readiness checks, and educational-environment recovery planning.
+### Backup & DR Automation](./Backup-DR-Automation/)
+Operational scripts and runbooks for backup management, DR readiness checks, and environment recovery planning.
 
 ---
 
-### [Dell Hardware Management](./Dell-Hardware-Management/)
+### [Hardware Management](./Dell-Hardware-Management/)
 iDRAC REST API automation for proactive server health checks and firmware maintenance workflow support.
 
 ---
 
-### [K-12 Network Segmentation Architecture](./K12-Network-Architecture/)
+### [Network Segmentation Architecture](./K12-Network-Architecture/)
 Secure network architecture and automation templates for student/staff/admin/IoT/guest segmentation.
 
 ---
