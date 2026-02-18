@@ -2,26 +2,24 @@
 
 This repository demonstrates enterprise Microsoft systems engineering, network architecture, infrastructure automation, and operational analytics for K-12 district environments.
 
-It is designed as a practical, hands-on showcase for **Senior Systems Engineer (Microsoft)** and **Senior Network Engineer** responsibilities: stable operations, secure architecture, proactive monitoring, documentation quality, and cross-team enablement.
+It is designed as a practical, hands-on showcase for **Systems Engineer (Microsoft)** and **Networking** experience: stable operations, secure architecture, proactive monitoring, documentation quality, and cross-team enablement.
 
 ---
 
-## What This Portfolio Demonstrates
-
-### Systems Engineering (Primary Emphasis)
+### Systems Engineering
 - Microsoft 365 + Entra ID + Intune-aligned operations
 - Windows Server / Active Directory automation and lifecycle management
 - Veeam backup/DR operational runbooks and validation patterns
-- Dell PowerEdge/iDRAC health and firmware lifecycle automation
+- PowerEdge/iDRAC health and firmware lifecycle automation
 - KPI-driven operations reporting with Power BI
 
-### Network Engineering (Secondary Emphasis)
+### Networking Infrastructure
 - K-12 VLAN segmentation and campus network security design
 - CIPA/FERPA-aware policy architecture and access boundaries
 - DHCP scope planning, network documentation automation, and health reporting
 - Multi-campus network monitoring concepts for capacity and reliability
 
-### Senior-Level Leadership & Mentoring
+### Leadership & Mentoring History Trial IT Services/CoreSKills
 - Step-by-step implementation guides and runbooks
 - Lessons learned and operational guardrails
 - Repeatable demos using synthetic sample data
@@ -42,7 +40,7 @@ PowerShell-based student/staff lifecycle management with automated provisioning 
 
 ---
 
-### [Power BI Dashboards for IT Operations](./Power-BI-Dashboards/)
+### [Dashboards for IT Operations](./Power-BI-Dashboards/)
 Power BI dashboards that visualize infrastructure health, enrollment/account trends, and network utilization.
 
 **Highlights**
@@ -53,17 +51,17 @@ Power BI dashboards that visualize infrastructure health, enrollment/account tre
 
 ---
 
-### [Veeam Backup & DR Automation](./Backup-DR-Automation/)
+### [Backup & DR Automation](./Backup-DR-Automation/)
 Operational scripts and runbooks for backup management, DR readiness checks, and educational-environment recovery planning.
 
 ---
 
-### [Dell Hardware Management](./Dell-Hardware-Management/)
+### [Hardware Management](./Dell-Hardware-Management/)
 iDRAC REST API automation for proactive server health checks and firmware maintenance workflow support.
 
 ---
 
-### [K-12 Network Segmentation Architecture](./K12-Network-Architecture/)
+### [Network Segmentation Architecture](./K12-Network-Architecture/)
 Secure network architecture and automation templates for student/staff/admin/IoT/guest segmentation.
 
 ---
