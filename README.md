@@ -100,7 +100,7 @@ Secure network architecture and automation templates for student/staff/admin/IoT
 ## Professional Profile
 
 **Bryan Shaw**  
-22+ years enterprise IT experience | Microsoft Certified (AZ-104, MD-102) | AZ-800/801 in progress
+22+ years enterprise IT experience | Microsoft Certified (AZ-104, MD-102) | AZ-800/801
 
 I focus on building reliable systems, reducing manual workload through automation, and creating clear documentation that helps teams operate consistently under real-world constraints.
 
