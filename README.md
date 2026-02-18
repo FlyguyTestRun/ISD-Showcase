@@ -79,9 +79,7 @@ Secure network architecture and automation templates for student/staff/admin/IoT
 | Network architecture, segmentation, compliance | `K12-Network-Architecture/` |
 | Team enablement / mentoring evidence | `HOW-TO-*`, `LESSONS-LEARNED.md`, architectural docs |
 
----
-
-## Technical Focus Areas
+**Automation & Scripting:** PowerShell modules and runbooks, API-based workflows, repeatable data generation, implementation templates.
 
 **Microsoft Infrastructure:** M365, Entra ID, Intune, Windows Server, ADDS, DNS, DHCP, hybrid identity patterns.
 
