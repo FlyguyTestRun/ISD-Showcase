@@ -8,7 +8,7 @@
 
 **Mentoring Focus:** Naming conventions, OU placement logic, audit logging expectations, safe validation before execution.
 
-**Outcome:** On the first run, nearly executed the batch script against the production OU — the confusion was test environment requirements not correctly sequenced. The pre-run validation check caught the mismatch before any accounts were created. From that point, confirming target OU and domain before any write operation became a required checkpoint in every provisioning run. The subsequent execution batch onboarded independently and documented exceptions for review.
+**Outcome:** On the first run, nearly executed the batch script against the production OU, the confusion was test environment requirements not correctly sequenced. The pre-run validation check caught the mismatch before any accounts were created. From that point, confirming target OU and domain before any write operation became a required checkpoint in every provisioning run. The subsequent execution batch onboarded independently and documented exceptions for review.
 
 ---
 

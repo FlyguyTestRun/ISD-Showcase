@@ -2,7 +2,7 @@
 
 [View Dashboard PDF](./Student-Enrollment-Dashboard.pdf)
 
-**Purpose:** Enrollment trends, identity provisioning velocity, device assignment tracking, and FERPA compliance metrics — built around how a large district actually operates at the start of each school year.
+**Purpose:** Enrollment trends, identity provisioning velocity, device assignment tracking, and FERPA compliance metrics, built around how a large district actually operates at the start of each school year.
 
 **Mock data profile:** 34,000 students, grades K-12, 4,500 staff, 51-square-mile district, 22 named campuses.
 
@@ -14,19 +14,19 @@
 - Total enrollment by grade (GradeSort 0-12 for correct K-12 ordering, GradeLabel for display)
 - Grade band distribution: Elementary / Middle / High School
 - Year-over-year enrollment change
-- Campus capacity utilization — over-capacity campuses surface first
+- Campus capacity utilization, over-capacity campuses surface first
 
 **Account Provisioning Velocity**
-- Daily new student and staff accounts — August surge and May graduation spike clearly visible
+- Daily new student and staff accounts, August surge and May graduation spike clearly visible
 - Monthly created vs. disabled comparison (net enrollment change visible)
-- Average provisioning time in minutes — SLA tracked against 15-minute target
-- Password reset volume trending weekly — highest-volume help desk category in most districts
-- FERPA audit log completeness gauge — target 99%+, alert below 97%
+- Average provisioning time in minutes, SLA tracked against 15-minute target
+- Password reset volume trending weekly, highest-volume help desk category in most districts
+- FERPA audit log completeness gauge, target 99%+, alert below 97%
 
 **Autopilot Device Assignment (Grades 5-12)**
 - Fleet size by campus, assignment status: Assigned / Pending / Unassigned
-- Autopilot provisioning success rate trending — 26-week view
-- Devices not seen in 7 days and 30 days by grade band — loss/reimage candidates
+- Autopilot provisioning success rate trending, 26-week view
+- Devices not seen in 7 days and 30 days by grade band, loss/reimage candidates
 - Post-deployment monitoring: new enrollments get device assignment tracked through provisioning
 
 **Campus Capacity**
@@ -35,10 +35,10 @@
 - Over-capacity campuses flagged with conditional formatting (>95% = red)
 
 **Forward-Looking: What Comes Next**
-- Canvas course enrollment sync — account creation should trigger Canvas course assignment via SDS or Canvas API
-- SIS-to-Entra sync audit — verify roster changes (transfers, promotions) propagate without manual intervention
-- Parent/guardian observer account provisioning — Canvas parent accounts tied to student enrollment
-- SSPR rollout tracking — self-service password reset reduces the largest single help desk category
+- Canvas course enrollment sync, account creation should trigger Canvas course assignment via SDS or Canvas API
+- SIS-to-Entra sync audit, verify roster changes (transfers, promotions) propagate without manual intervention
+- Parent/guardian observer account provisioning, Canvas parent accounts tied to student enrollment
+- SSPR rollout tracking, self-service password reset reduces the largest single help desk category
 
 ---
 
@@ -51,7 +51,7 @@
 | `account-provisioning.csv` | Daily | New/disabled accounts, `AvgProvisioningTimeMins`, `PasswordResetsTotal`, `AuditLogCompletePct` |
 | `device-assignment.csv` | Weekly x Campus | `FleetSize`, assigned/pending/unassigned, `AutopilotSuccessRatePct`, devices not seen |
 
-**Note on grades:** `GradeSort` is an integer (0=K, 1-12 for grades 1-12) used for sort order and numeric operations. `GradeLabel` is used for display only — standard K-12 data model design to handle non-numeric grade identifiers cleanly.
+**Note on grades:** `GradeSort` is an integer (0=K, 1-12 for grades 1-12) used for sort order and numeric operations. `GradeLabel` is used for display only, standard K-12 data model design to handle non-numeric grade identifiers cleanly.
 
 ---
 

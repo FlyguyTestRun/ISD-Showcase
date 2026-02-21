@@ -9,7 +9,7 @@
 
 ## Overview
 
-PowerShell automation for student and staff identity lifecycle in K-12 environments. The **K12Identity** module implements K-12 naming conventions and OU structures that scale from a pilot classroom to a 34,000-student district. The patterns here are built for operating an existing Entra ID environment — extending, maintaining, and troubleshooting — not just initial setup.
+PowerShell automation for student and staff identity lifecycle in K-12 environments. The **K12Identity** module implements K-12 naming conventions and OU structures that scale from a pilot classroom to a 34,000-student district. The patterns here are built for operating an existing Entra ID environment, extending, maintaining, and troubleshooting, not just initial setup.
 
 **Key Features:**
 - **Automated Student Provisioning:** Bulk student account creation with grade-level OUs (9-12)
@@ -32,7 +32,7 @@ Creates student Active Directory accounts with automated OU placement.
 - `FirstName` - Student first name
 - `LastName` - Student last name
 - `StudentID` - Unique student identifier from SIS
-- `GradeLevel` - Current grade level (9, 10, 11, 12)
+- `GradeLevel` - Current grade level (0=Kindergarten through 12)
 - `GraduationYear` - Expected graduation year (for OU structure)
 
 **Example:**
@@ -318,7 +318,7 @@ Get-Command -Module KISDIdentity
 2. **Batch Processing:** Run `New-StudentBatch.ps1` to create accounts
 3. **Verification:** Review audit log for errors, manually fix exceptions
 4. **Welcome Emails:** Send automated welcome emails with login instructions
-5. **Device Assignment (grades 5-12):** Autopilot profile assigned at account creation — Surface device assigned from fleet inventory, ready for student pickup
+5. **Device Assignment (grades 5-12):** Autopilot profile assigned at account creation, Surface device assigned from fleet inventory, ready for student pickup
 
 ### Mid-Year Transfers
 - **New Students:** Run `New-KISDStudentAccount` individually or batch (small CSV)
@@ -374,10 +374,10 @@ Get-Command -Module KISDIdentity
 
 For a district already running Entra ID at 34,000 accounts with 23,000 Intune-managed devices, the operational questions shift from setup to maintenance and extension:
 
-- **SIS API integration:** Eliminate the nightly CSV export — real-time Entra account sync when enrollment changes occur in Skyward or PowerSchool
+- **SIS API integration:** Eliminate the nightly CSV export, real-time Entra account sync when enrollment changes occur in Skyward or PowerSchool
 - **School Data Sync (SDS) alignment:** Ensure account provisioning feeds Canvas course enrollment automatically at account creation
-- **SSPR (Self-Service Password Reset):** Roll out Entra SSPR for students to reduce help desk ticket volume on password resets — largest single category of help desk contact at most districts
-- **Conditional Access scope audit:** Verify all 38,500 accounts fall under an appropriate Conditional Access policy — no gaps from legacy accounts or shared device scenarios
+- **SSPR (Self-Service Password Reset):** Roll out Entra SSPR for students to reduce help desk ticket volume on password resets, largest single category of help desk contact at most districts
+- **Conditional Access scope audit:** Verify all 38,500 accounts fall under an appropriate Conditional Access policy, no gaps from legacy accounts or shared device scenarios
 - **Autopilot profile review:** As new device categories come into the fleet (staff refreshes, lab devices, shared carts), verify Autopilot profiles are correctly scoped and tested before bulk deployment
 
 ---

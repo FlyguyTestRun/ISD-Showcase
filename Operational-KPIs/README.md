@@ -4,10 +4,10 @@ Practical KPI datasets and generation script for operations dashboards and leade
 
 ## KPI Datasets
 
-- `incident-trends.csv` — incident volume, MTTR, and priority distribution by week
-- `change-success-rate.csv` — scheduled vs. successful changes, rollback events, success rate
-- `backup-sla-attainment.csv` — backup completion rate, failed jobs, SLA attainment trend
-- `network-availability.csv` — campus availability, latency, packet loss, outage minutes
+- `incident-trends.csv`: incident volume, MTTR, and priority distribution by week
+- `change-success-rate.csv`: scheduled vs. successful changes, rollback events, success rate
+- `backup-sla-attainment.csv`: backup completion rate, failed jobs, SLA attainment trend
+- `network-availability.csv`: campus availability, latency, packet loss, outage minutes
 
 ## Data Generation
 

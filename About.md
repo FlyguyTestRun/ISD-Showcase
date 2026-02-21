@@ -33,7 +33,7 @@ CoreSkills operated as a trainer-to-trainers program, developing mid-size compan
 - Built a multi-agent orchestration system in Python with a 3-layer routing engine agnostic to platform and built with open-source LLMs (keyword → fuzzy match → LLM escalation) and confidence-based dispatch used as a live teaching Platform for applied AI/ML automation concepts
 - Developed curriculum for KPI pipeline construction from API calls: taught analysts to pull operational data from REST endpoints, clean and transform it with Python, and deliver dashboards via Grafana and Prometheus
 - Deployed PostgreSQL-backed data pipelines for tracking training outcomes and platform metrics; covered schema design, query optimization, and migration/cleanup workflows
-- Trained technicians in infrastructure change discipline: pre-change baseline capture, firewall rule (allow/deny) execution, post-change verification, and rollback criteria — not just theory, but supervised live execution
+- Trained technicians in infrastructure change discipline: pre-change baseline capture, firewall rule (allow/deny) execution, post-change verification, and rollback criteria, not just theory, but supervised live execution
 - Produced ADR-style (Architecture Decision Record) documentation for all major platform design choices, establishing a documentation-first standard that trainees carried into their production environments
 - Created platform-agnostic integration modules across Microsoft 365, Entra ID, Intune, Azure, and AWS designed so trainees could adapt patterns to their employer's stack without relearning from scratch
 
@@ -107,11 +107,11 @@ CoreSkills operated as a trainer-to-trainers program, developing mid-size compan
 
 ## Beyond the Work
 
-I'm a licensed pilot — general aviation is my passion, with powered and unpowered paragliding when I have time. Aviation transfers directly into infrastructure work: pre-flight checklists, go/no-go criteria, and the habit of never skipping a verification step under pressure. Those patterns show up in how I design runbooks and train engineers to execute changes. I also built a multi-agent orchestration system (MAO) for CoreSkills — a Python-based dispatch platform that routes queries through keyword, fuzzy, and LLM layers — designed with the same discipline: redundant validation loops before any state change.
+I'm a licensed pilot, general aviation is my passion, with powered and unpowered paragliding when I have time. Aviation transfers directly into infrastructure work: pre-flight checklists, go/no-go criteria, and the habit of never skipping a verification step under pressure. Those patterns show up in how I design runbooks and train engineers to execute changes. I also built a multi-agent orchestration system (MAO) for CoreSkills, a Python-based dispatch platform that routes queries through keyword, fuzzy, and LLM layers, designed with the same discipline: redundant validation loops before any state change.
 
-Outside of work, I'm a DFW local with two daughters who attend school in the Keller ISD. That's not background noise it means I care about this district's technology working the way it should for the same reasons every parent in these schools does. I want to be part of the forefront of technology in this district.
+Outside of work, I'm a DFW local with two daughters who attend school in the Keller ISD. That's not background noise. It means I care about this district's technology working the way it should for the same reasons every parent in these schools does. I want to be part of the forefront of technology in this district.
 
-I also spend time building integration projects at the intersection of technology and wellness — exploring how automation, data pipelines, and API-connected platforms can support behavioral health and personal development workflows. It keeps my consulting skills sharp and my curiosity honest.
+I also spend time building integration projects at the intersection of technology and wellness, exploring how automation, data pipelines, and API-connected platforms can support behavioral health and personal development workflows. It keeps my consulting skills sharp and my curiosity honest.
 
 ---
 
@@ -131,7 +131,7 @@ PowerShell modules for student/staff account lifecycle management, built to oper
 - Designed curriculum modules agnostic to platform connecting Microsoft 365, Entra ID, and Intune to AWS and Google identity, trainees left able to operate in whichever stack their employer ran, not just the one they studied
 - Produced implementation-grade reference documentation for AI-assisted workflows in modern Microsoft environments, written to be handed off without follow-up explanation
 
-### Full-Stack PaaS CRM Replacement — Roofing Industry (Consulting Delivery Outside K-12)
+### Full-Stack PaaS CRM Replacement, Roofing Industry (Consulting Delivery Outside K-12)
 *Included as evidence of end-to-end build and integration capability.*
 Designed and delivered a complete PaaS replacement for a roofing company's SaaS CRM subscription built from scratch in approximately 45 days and returned positive ROI within 3 months versus their prior per-seat licensing costs (~$18K/m + 16K/yr). The system replaced the vendor CRM with a custom Glide-based frontend backed by an integrated automation and data pipeline.
 
@@ -143,7 +143,7 @@ The client's existing AccuLynx SaaS CRM handled job tracking but required office
 - **Real-time vendor supply integration:** Live API connections to material suppliers provided field contractors with current shingle and material availability at the point of client consultation contractors could quote and commit on-site with accurate inventory data
 - **Geosync-driven dispatch and routing:** Integrated geospatial data to optimize contractor scheduling and client pickup routing based on live location, reduced drive time and improved same-day appointment throughput
 - **Storm event automation:** Connected hail map and storm tracking feeds; qualifying weather events in the service area automatically flagged affected client addresses, triggered outreach sequences, and pre-populated job records
-- **Dynamic pricing engine:** Material and labor estimates adjusted in real time based on supplier availability and storm-season demand — no manual price table updates during high-volume periods
+- **Dynamic pricing engine:** Material and labor estimates adjusted in real time based on supplier availability and storm-season demand, no manual price table updates during high-volume periods
 - **End-to-end workflow automation:** Damage assessment scheduling, insurance adjuster coordination, material order tracking, and job completion follow-up all triggered by pipeline state transitions rather than manual staff entry
 
 **Outcome:** Client eliminated the SaaS subscription, gained field-operational capability their previous tool never provided, and recovered build cost within one post-storm season cycle.
