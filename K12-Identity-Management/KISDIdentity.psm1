@@ -15,12 +15,20 @@ function New-KISDStudentAccount {
         [string]$LastName,
 
         [Parameter(Mandatory)]
-        [ValidateRange(9,12)]
+        [ValidateRange(0,12)]
         [int]$GradeLevel,
 
-        [Parameter(Mandatory)]
-        [int]$GraduationYear
+        [Parameter()]
+        [int]$GraduationYear = 0
     )
+
+    # Grade label lookup: 0 = Kindergarten, 1-12 = Grade 1 through 12
+    $gradeLabelMap = @{
+        0='GradeK'; 1='Grade1'; 2='Grade2'; 3='Grade3'; 4='Grade4'
+        5='Grade5'; 6='Grade6'; 7='Grade7'; 8='Grade8'
+        9='Grade9'; 10='Grade10'; 11='Grade11'; 12='Grade12'
+    }
+    $gradeOU = $gradeLabelMap[$GradeLevel]
 
     try {
         # Generate username: first initial + last name + last 4 of student ID
@@ -37,8 +45,8 @@ function New-KISDStudentAccount {
             FirstName = $FirstName
             LastName = $LastName
             GradeLevel = $GradeLevel
-            GraduationYear = $GraduationYear
-            OU = "OU=Grade$GradeLevel,OU=Students,DC=keller,DC=edu"
+            GraduationYear = if ($GradeLevel -ge 9 -and $GraduationYear -gt 0) { $GraduationYear } else { $null }
+            OU = "OU=$gradeOU,OU=Students,DC=keller,DC=edu"
             Created = Get-Date
             Status = "Active"
         }

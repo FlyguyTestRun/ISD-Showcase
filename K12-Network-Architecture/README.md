@@ -1,255 +1,106 @@
-# K-12 Network Segmentation & Security Architecture
+# K-12 Network Segmentation and Security Architecture
 
-PowerShell automation and architectural documentation for secure K-12 network design with VLAN segmentation, CIPA compliance, and student data protection.
-
----
-
-## Overview
-
-This folder contains network architecture documentation and automation scripts for implementing secure, compliant network infrastructure in K-12 educational environments. The design prioritizes:
-
-- **Student Internet Safety** (CIPA compliance via DNS filtering and web content filtering)
-- **Network Segmentation** (VLANs isolate student, staff, admin, IoT, and guest traffic)
-- **FERPA Data Protection** (administrative systems isolated from student-accessible networks)
-- **BYOD Support** (guest network with captive portal, isolated from internal resources)
-- **Operational Efficiency** (automated DHCP configuration, documentation generation)
+Network segmentation design and DHCP automation for a multi-campus K-12 district. The architecture follows the segmentation model common across large Texas ISDs: separate VLANs for students, staff, administrative systems, IoT/building controls, and guest/BYOD, with CIPA-compliant filtering on student traffic.
 
 ---
 
-## Files
+## VLAN Design
 
-### 1. `Network-Segmentation-Design.md`
-**Purpose:** Comprehensive network architecture design document
+| VLAN | Name | Network | Purpose | Filtering |
+|------|------|---------|---------|-----------|
+| 10 | Student-Data | 10.10.10.0/24 | Student devices, classroom tech | CIPA-compliant (Umbrella or equivalent) |
+| 20 | Staff-Data | 10.10.20.0/24 | Teacher and staff workstations | Standard policy filtering |
+| 30 | Admin-Servers | 10.10.30.0/24 | Domain controllers, SIS, file servers | Restricted access only |
+| 40 | IoT-Building | 10.10.40.0/24 | Cameras, HVAC, access control | Isolated, no lateral movement |
+| 50 | Guest-BYOD | 10.10.50.0/24 | Visitor devices, personal devices | Internet-only, captive portal |
 
-**Contents:**
-- **VLAN Design:** 5-tier segmentation (Student, Staff, Admin, IoT, Guest)
-- **Security Architecture:** Firewall rules, ACLs, inter-VLAN routing policies
-- **CIPA Compliance:** DNS filtering, web proxy configuration, SafeSearch enforcement
-- **DHCP Configuration:** Scope design with appropriate lease durations per network tier
-- **Wireless Networks:** SSID mapping to VLANs with 802.1X authentication
-- **Monitoring & Reporting:** NetFlow, SIEM integration, quarterly compliance reports
-
-**Key Highlights:**
-- Student VLAN isolated from building systems (prevents access to IP cameras, HVAC)
-- Guest network has internet-only access (no internal resource access)
-- Administrative servers on dedicated VLAN with restricted access
-- IoT devices cannot initiate connections to other VLANs (security best practice)
+Five-tier segmentation handles the two compliance requirements that matter in K-12: CIPA on student internet access and FERPA isolation for systems handling student records.
 
 ---
 
-### 2. `VLAN-Configuration-Template.ps1`
-**Purpose:** PowerShell automation for DHCP and network documentation
+## Security Controls by Segment
 
-**Functions:**
-- `New-K12DHCPScopes` - Creates DHCP scopes for all 5 VLANs with appropriate DNS servers and lease durations
-- `New-K12DHCPReservations` - Assigns static DHCP reservations for critical infrastructure (servers, printers, cameras)
-- `Export-K12NetworkDocumentation` - Generates comprehensive network documentation in Markdown format
+**Student (VLAN 10)**
+- DNS filtering via Cisco Umbrella or comparable service (CIPA required categories blocked)
+- HTTPS inspection proxy for content enforcement (Lightspeed or equivalent)
+- SafeSearch enforcement at DNS level for Google, Bing, YouTube
+- AP client isolation prevents device-to-device traffic on student wireless
+- Access to admin VLAN restricted to specific file server shares only
 
-**Example Usage:**
-```powershell
-# Deploy complete K-12 DHCP configuration
-New-K12DHCPScopes -DHCPServer "DC01.kisd.local"
+**Staff (VLAN 20)**
+- 802.1X authentication against Entra ID or on-prem AD via NPS/RADIUS
+- Group Policy enforces Defender, BitLocker, and patch compliance on domain-joined devices
+- In a Meraki environment, staff SSID maps to VLAN 20 with 802.1X configured at the MR AP level
+- Aruba ClearPass handles the same function in Aruba deployments; Cisco ISE in ISE-based environments
 
-# Create static reservations for servers and network devices
-New-K12DHCPReservations -DHCPServer "DC01.kisd.local"
+**Admin Servers (VLAN 30)**
+- No direct internet access; outbound filtered to Windows Update, licensing, and approved services only
+- IT staff and service accounts only; role-based access enforced through AD group membership
+- All access logged for FERPA audit compliance
+- Static IP or DHCP reservation for all servers
 
-# Generate network documentation
-Export-K12NetworkDocumentation -OutputPath "C:\Documentation\KISD-Network-Config.md"
-```
+**IoT/Building (VLAN 40)**
+- No outbound internet except firmware update endpoints
+- Cameras on a separate subnet from HVAC within the IoT range (defense in depth)
+- IT administrative access only; no student or staff device access to this segment
 
----
-
-## VLAN Architecture Summary
-
-| VLAN | Name | Network | Purpose | Security Level |
-|------|------|---------|---------|----------------|
-| 10 | Student-Data | 10.10.10.0/24 | Student devices, classroom tech | High filtering (CIPA) |
-| 20 | Staff-Data | 10.10.20.0/24 | Teacher/staff workstations | Moderate filtering |
-| 30 | Admin-Servers | 10.10.30.0/24 | Domain controllers, SIS, file servers | Restricted access |
-| 40 | IoT-Building | 10.10.40.0/24 | IP cameras, HVAC, access control | Isolated (no internet) |
-| 50 | Guest-BYOD | 10.10.50.0/24 | Visitor devices, BYOD | Internet-only access |
-
----
-
-## Security Controls
-
-### Student Network (VLAN 10)
-- **DNS Filtering:** All queries routed through Cisco Umbrella (CIPA-compliant categories blocked)
-- **Web Content Filtering:** HTTPS inspection via Lightspeed Relay (blocks adult content, anonymizers)
-- **SafeSearch Enforcement:** DNS-level enforcement on Google, Bing, YouTube
-- **Device Isolation:** Students cannot access other students' devices (AP isolation enabled)
-- **Firewall Rules:** Internet access allowed, admin VLAN access restricted to file servers only
-
-### Staff Network (VLAN 20)
-- **Domain Authentication:** 802.1X with Active Directory credentials (computer + user auth)
-- **Less Restrictive Filtering:** Allows social media and educational research sites
-- **Group Policy Enforcement:** Windows Defender, BitLocker encryption, automatic updates
-- **Full Admin Access:** Staff can access all administrative servers (SIS, file servers, printers)
-
-### Administrative Network (VLAN 30)
-- **No Direct Internet:** Servers access internet only via explicit firewall rules (Windows Update, licensing)
-- **Role-Based Access:** Only IT staff and service accounts can connect
-- **Audit Logging:** All access logged for FERPA compliance and security audits
-- **Static IP Addressing:** All servers use static IPs or DHCP reservations
-
-### IoT Network (VLAN 40)
-- **Complete Isolation:** IoT devices cannot initiate connections to any other VLAN
-- **No Student/Staff Access:** Only IT administrators can access IoT management interfaces
-- **Limited Internet:** Firmware updates only, no general internet browsing
-- **Further Segmentation:** Cameras on separate subnet from HVAC (defense in depth)
-
-### Guest Network (VLAN 50)
-- **Captive Portal:** Web-based terms of use acceptance before internet access
-- **Internet-Only:** Zero access to internal VLANs (student, staff, admin, IoT)
-- **Bandwidth Throttling:** 5 Mbps per device to prevent abuse
-- **Session Timeout:** 4-hour automatic disconnection
+**Guest/BYOD (VLAN 50)**
+- Captive portal with terms of use before internet access
+- Zero routing to any internal VLAN
+- Per-device bandwidth cap (5 Mbps) and session timeout (4 hours)
 
 ---
 
-## CIPA Compliance Implementation
+## Wireless Architecture
 
-### Children's Internet Protection Act (CIPA) Requirements
-Schools receiving E-Rate funding must:
-1. **Block obscene content** (pornography, violent content)
-2. **Block content harmful to minors** (drugs, weapons, hate speech)
-3. **Monitor online activities** (logging and reporting)
-4. **Educate students** about appropriate online behavior
+Wireless SSIDs map directly to VLANs. In Meraki-managed deployments this is configured per SSID in the Meraki dashboard with VLAN tagging at the MR level. Aruba and traditional Cisco WLC deployments follow the same logical model with platform-specific configuration.
 
-### Technical Implementation
-**DNS-Based Filtering (Primary):**
-- Student VLAN DHCP provides filtered DNS servers (Cisco Umbrella, Cloudflare Gateway for Families)
-- All DNS queries logged for compliance reporting
-- SafeSearch enforced on all major search engines
+| SSID | VLAN | Auth | Notes |
+|------|------|------|-------|
+| KISD-Student | 10 | 802.1X or MAB | District-managed student devices |
+| KISD-Staff | 20 | 802.1X (user + computer) | Domain-joined staff devices |
+| KISD-Guest | 50 | Captive portal | Visitors, parents, contractors |
 
-**Web Proxy (Secondary):**
-- Lightspeed Relay or similar HTTPS inspection proxy
-- SSL/TLS decryption with trusted CA certificate (deployed via MDM)
-- Category blocking: Adult content, gambling, weapons, anonymizers/VPNs
-
-**Time-Based Policies:**
-- Social media blocked during instructional hours (7 AM - 3 PM)
-- YouTube restricted mode enforced, educational channels whitelisted
-- After-hours relaxation for extracurricular activities
+At KISD scale (850+ access points across 40+ campuses), wireless controller health and AP client counts are tracked in the Network Infrastructure Monitoring dashboard.
 
 ---
 
-## Deployment Guide
+## CIPA Compliance
 
-### Prerequisites
-- Windows Server with DHCP Server role installed
-- Layer 3 switch with VLAN support and inter-VLAN routing
-- Firewall with stateful packet inspection and application control
-- DNS filtering service (Cisco Umbrella, Cloudflare Gateway, or similar)
-- 802.1X authentication infrastructure (RADIUS server, typically Windows NPS)
+Schools receiving E-Rate funding must block obscene and harmful content, log internet activity, and educate students on appropriate use. The technical implementation here addresses the blocking and logging requirements:
 
-### Step 1: Create VLANs on Core Switch
-```cisco
-vlan 10
- name Student-Data
-vlan 20
- name Staff-Data
-vlan 30
- name Admin-Servers
-vlan 40
- name IoT-Building
-vlan 50
- name Guest-BYOD
-```
+- Student VLAN DHCP assigns filtered DNS (Cisco Umbrella, Cloudflare Gateway, or district-managed DNS with RPZ)
+- All DNS queries logged; category blocking enforced at DNS and proxy layers
+- Time-based policies lock social media during instructional hours
+- YouTube restricted mode enforced via DNS-level header injection or proxy policy
 
-### Step 2: Configure Layer 3 Interfaces (SVIs)
-```cisco
-interface Vlan10
- description Student Data Network
- ip address 10.10.10.1 255.255.255.0
- ip helper-address 10.10.30.10
-```
-(Repeat for all VLANs)
-
-### Step 3: Deploy DHCP Scopes via PowerShell
-```powershell
-Import-Module .\VLAN-Configuration-Template.ps1
-New-K12DHCPScopes -DHCPServer "DC01.kisd.local"
-New-K12DHCPReservations -DHCPServer "DC01.kisd.local"
-```
-
-### Step 4: Configure Firewall Rules
-- Implement inter-VLAN access control lists (ACLs)
-- Configure NAT for internet access
-- Enable HTTPS inspection for student VLAN
-- Set up VPN for remote IT administration
-
-### Step 5: Configure Wireless SSIDs
-| SSID | VLAN | Authentication | Usage |
-|------|------|----------------|-------|
-| KISD-Student | 10 | 802.1X (AD) | District-issued student devices |
-| KISD-Staff | 20 | 802.1X (Computer + User) | Staff laptops/desktops |
-| KISD-Guest | 50 | Captive Portal | Visitors, parents, contractors |
-
-### Step 6: Testing & Validation
-- [ ] Verify students cannot access staff file shares
-- [ ] Verify staff can access SIS database and file servers
-- [ ] Verify guests cannot access any internal resources
-- [ ] Verify IoT devices are isolated from other VLANs
-- [ ] Test DNS filtering (attempt to access blocked categories)
-- [ ] Validate 802.1X authentication on wireless networks
+FERPA compliance is handled through VLAN isolation: SIS databases and student records systems sit on VLAN 30, unreachable from student or guest segments without explicit firewall permit rules.
 
 ---
 
-## Monitoring & Compliance
+## Automation Script
 
-### Daily Monitoring
-- DHCP lease exhaustion alerts (low available IPs in student VLAN)
-- Firewall rule violation alerts (unauthorized access attempts)
-- DNS filtering alerts (blocked content access attempts)
+`VLAN-Configuration-Template.ps1` handles DHCP scope deployment and network documentation generation via PowerShell:
 
-### Weekly Reports
-- Bandwidth utilization per VLAN (identify capacity planning needs)
-- Top blocked categories (CIPA compliance documentation)
-- Security incidents (malware, intrusion attempts)
+- `New-K12DHCPScopes` creates scopes for all five VLANs with appropriate lease durations and DNS server assignments
+- `New-K12DHCPReservations` creates static DHCP reservations for servers, printers, and network devices
+- `Export-K12NetworkDocumentation` generates a Markdown documentation file from current DHCP configuration
 
-### Quarterly Compliance Reports (E-Rate Requirement)
-- Total blocked requests by category
-- Student internet usage statistics
-- Policy violation incidents and remediation
-- Network infrastructure changes and updates
+The scripts target Windows Server DHCP and are built for repeatability across campuses. New campus onboarding runs the same scripts with campus-specific parameters.
 
 ---
 
-## Troubleshooting
+## Monitoring
 
-### Common Issues
+Daily: DHCP lease exhaustion alerts on student VLAN, firewall rule violation alerts, DNS filtering alert volume.
 
-**Students cannot access internet:**
-- Check DNS server configuration in DHCP scope (should be filtered DNS)
-- Verify firewall allows VLAN 10 → Internet (ports 80, 443)
-- Check content filter status (Cisco Umbrella dashboard)
+Weekly: Bandwidth utilization per VLAN, top blocked content categories (CIPA documentation), security incident summary.
 
-**Staff cannot access file servers:**
-- Verify VLAN 20 → VLAN 30 firewall rules allow SMB (port 445)
-- Check domain authentication (user must be in correct AD security groups)
-- Verify DNS resolution for file server hostnames
+Quarterly: E-Rate compliance report covering blocked requests by category, policy violations and remediation, infrastructure change log.
 
-**Guest network not working:**
-- Check captive portal configuration (web server reachable?)
-- Verify VLAN 50 firewall rules allow outbound internet only
-- Test DHCP scope has available IPs (check lease status)
-
-**IoT devices cannot communicate:**
-- Verify VLAN 40 devices are on correct subnet
-- Check firewall rules (IoT should be isolated from other VLANs)
-- Confirm static IPs or DHCP reservations configured correctly
-
----
-
-## Additional Resources
-
-- [CIPA Compliance Guidelines (FCC)](https://www.fcc.gov/consumers/guides/childrens-internet-protection-act)
-- [CoSN K-12 Network Security Framework](https://www.cosn.org/)
-- [NIST Cybersecurity Framework for Education](https://www.nist.gov/cyberframework)
-- [Cisco K-12 Network Design Guide](https://www.cisco.com/c/en/us/solutions/industries/education.html)
+Network device health and uptime tracked in [Network-Infrastructure-Monitoring dashboard](../Power-BI-Dashboards/Network-Infrastructure-Monitoring/).
 
 ---
 
 **Author:** Bryan Shaw
 **Contact:** BryanJShaw@gmail.com
-**Purpose:** K-12 network architecture reference implementation

@@ -8,7 +8,7 @@
 
 **Mentoring Focus:** Naming conventions, OU placement logic, audit logging expectations, safe validation before execution.
 
-**Outcome:** On the first run, nearly executed the batch script against the production OU — the confusion was test enviorment requirements not correctly sequenced. The pre-run validation check caught the mismatch before any accounts were created. From that point, confirming target OU and domain before any write operation became a required checkpoint in every provisioning run. The subsequen executed batch onboarded independently and documented exceptions for review.
+**Outcome:** On the first run, nearly executed the batch script against the production OU — the confusion was test environment requirements not correctly sequenced. The pre-run validation check caught the mismatch before any accounts were created. From that point, confirming target OU and domain before any write operation became a required checkpoint in every provisioning run. The subsequent execution batch onboarded independently and documented exceptions for review.
 
 ---
 
@@ -20,7 +20,7 @@
 
 **Mentoring Focus:** Escalation triggers, evidence capture, and post-incident communication structure.
 
-**Outcome:** After coaching, the team stopped submitting tickets that just said "backup failed." Every escalation began to include the job name, last successful backup timestamp, and data size transferred — the three data points needed to immediately assess severity. This removed the back-and-forth that had been adding yp betweeen the incident response.
+**Outcome:** After coaching, the team stopped submitting tickets that just said "backup failed." Every escalation began to include the job name, last successful backup timestamp, and data size transferred, the three data points needed to immediately assess severity. This cut the back-and-forth that had been adding time between escalation and incident response.
 
 ---
 
