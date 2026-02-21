@@ -9,7 +9,7 @@ Operational KPI dashboards built around how a large district runs at the start o
 ## Dashboard Pages
 
 ### Page 1, Enrollment Overview
-Enrollment by grade (K-12), grade band distribution (Elementary / Middle / High School), year-over-year change, and campus capacity utilization. Over-capacity campuses surface first. GradeSort integer ensures K sorts correctly, a common failure point in school district Power BI builds.
+Enrollment by grade (K-12), grade band distribution (Elementary / Middle / High School), year-over-year change, and campus capacity utilization. Over-capacity campuses surface first. GradeSort integer ensures K sorts correctly. This is a common failure point in school district Power BI builds.
 
 ### Page 2, Provisioning and Identity
 Daily new student and staff accounts with the August surge visible. Monthly created vs. disabled comparison. Average provisioning time tracked against a 15-minute SLA. Password reset volume trending weekly. FERPA audit log completeness gauge (target 99%+, alert below 97%).
@@ -54,5 +54,5 @@ All sample data is reproducible via PowerShell:
 
 ---
 
-**Created by:** Bryan Shaw
+**Author:** Bryan Shaw
 **Last Updated:** February 2026

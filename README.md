@@ -1,8 +1,6 @@
 # K-12 Systems Engineering Portfolio
 
-24+ years in Microsoft infrastructure across legal technology, professional services, and education-aligned consulting. The patterns in this repo came from real enterprise operational work: identity lifecycle management, network segmentation, backup and DR under school-calendar constraints, and KPI reporting built for leadership review. This portfolio is calibrated to the district's current stack and scale: 34,000 students, 23,000 Windows 11 devices managed via Autopilot and Intune, Entra ID at full district scale, M365 A5, and Canvas as the LMS.
-
-The focus is operating and extending what's already built, not designing from scratch.
+Engineering portfolio calibrated to KISD's operating environment: 34,000 students, 23,000 Windows 11 devices managed via Autopilot and Intune, Entra ID at full district scale, M365 A5, and Canvas as the LMS. The focus is operational depth: identity lifecycle, network segmentation, backup and DR under school-calendar constraints, and KPI dashboards built for leadership review.
 
 ---
 
@@ -38,7 +36,7 @@ The focus is operating and extending what's already built, not designing from sc
 **Bryan Shaw** | AZ-104, MD-102 | AZ-800/801
 BryanJShaw@gmail.com | 817-653-5656 | [LinkedIn](https://www.linkedin.com/in/bryan-shaw-45a23124/) | [GitHub](https://github.com/FlyguyTestRun/) | [About](./About.md)
 
-22+ years in enterprise Microsoft infrastructure: legal technology firms in Dallas (Trial IT), consulting delivery across professional services clients, and education-aligned operations work at Mansfield ISD and through CoreSkills4AI. The identity lifecycle design, FERPA/CIPA compliance controls, and enrollment-cycle automation in this portfolio were developed through that consulting work and map directly to ISD operational requirements. The same engineering discipline that protects sensitive client data in legal environments applies to protecting student data at district scale.
+24+ years in enterprise Microsoft infrastructure across legal technology, professional services, and education-aligned operations. Full background and skills profile: [About.md](./About.md).
 
 ---
 

@@ -6,7 +6,7 @@
 
 ## Professional Summary
 
-Systems Engineer with 22+ years of progressive IT experience designing, implementing, and supporting enterprise Microsoft infrastructure across legal technology, professional services, and education-aligned environments.
+Systems Engineer with 24+ years in enterprise Microsoft infrastructure: legal technology firms in Dallas (Trial IT), consulting delivery across professional services clients, and education-aligned operations work at Mansfield ISD and through CoreSkills4AI. The identity lifecycle design, FERPA/CIPA compliance controls, and enrollment-cycle automation in this portfolio were developed through that consulting work and map directly to ISD operational requirements. The same engineering discipline that protects sensitive client data in legal environments applies to protecting student data at district scale.
 
 Core strengths include secure systems design, infrastructure automation, operational reporting, and documentation that enables junior engineers and support teams to execute consistently.
 
@@ -30,7 +30,7 @@ Core strengths include secure systems design, infrastructure automation, operati
 CoreSkills operated as a trainer-to-trainers program, developing mid-size company IT analysts and technicians who needed to build production-grade skills in automation, observability, and infrastructure operations.
 
 - Designed and ran Docker-based lab environments simulating production Microsoft infrastructure, supporting 20+ concurrent learners across Windows Server, Active Directory, and cloud identity workflows
-- Built a multi-agent orchestration system in Python with a 3-layer routing engine agnostic to platform and built with open-source LLMs (keyword → fuzzy match → LLM escalation) and confidence-based dispatch used as a live teaching Platform for applied AI/ML automation concepts
+- Built a multi-agent orchestration system in Python with a 3-layer routing engine agnostic to platform and built with open-source LLMs (keyword → fuzzy match → LLM escalation) and confidence-based dispatch used as a live teaching platform for applied AI/ML automation concepts
 - Developed curriculum for KPI pipeline construction from API calls: taught analysts to pull operational data from REST endpoints, clean and transform it with Python, and deliver dashboards via Grafana and Prometheus
 - Deployed PostgreSQL-backed data pipelines for tracking training outcomes and platform metrics; covered schema design, query optimization, and migration/cleanup workflows
 - Trained technicians in infrastructure change discipline: pre-change baseline capture, firewall rule (allow/deny) execution, post-change verification, and rollback criteria, not just theory, but supervised live execution
@@ -107,9 +107,9 @@ CoreSkills operated as a trainer-to-trainers program, developing mid-size compan
 
 ## Beyond the Work
 
-I'm a licensed pilot, general aviation is my passion, with powered and unpowered paragliding when I have time. Aviation transfers directly into infrastructure work: pre-flight checklists, go/no-go criteria, and the habit of never skipping a verification step under pressure. Those patterns show up in how I design runbooks and train engineers to execute changes. I also built a multi-agent orchestration system (MAO) for CoreSkills, a Python-based dispatch platform that routes queries through keyword, fuzzy, and LLM layers, designed with the same discipline: redundant validation loops before any state change.
+I'm a licensed pilot. General aviation is my passion, with powered and unpowered paragliding when I have time. Aviation transfers directly into infrastructure work: pre-flight checklists, go/no-go criteria, and the habit of never skipping a verification step under pressure. Those patterns show up in how I design runbooks and train engineers to execute changes. I also built a multi-agent orchestration system (MAO) for CoreSkills, a Python-based dispatch platform that routes queries through keyword, fuzzy, and LLM layers, designed with the same discipline: redundant validation loops before any state change.
 
-Outside of work, I'm a DFW local with two daughters who attend school in the Keller ISD. That's not background noise. It means I care about this district's technology working the way it should for the same reasons every parent in these schools does. I want to be part of the forefront of technology in this district.
+Outside of work, I'm a DFW local with two daughters who attend school in the Keller ISD. That's not background noise. It means I care about this district's technology working the way it should for the same reasons every parent in these schools does. I want to help make that happen.
 
 I also spend time building integration projects at the intersection of technology and wellness, exploring how automation, data pipelines, and API-connected platforms can support behavioral health and personal development workflows. It keeps my consulting skills sharp and my curiosity honest.
 
@@ -119,7 +119,7 @@ I also spend time building integration projects at the intersection of technolog
 
 ### K-12 Identity Management Automation
 PowerShell modules for student/staff account lifecycle management, built to operate at district scale:
-- Automated student account creation with grade-level OUs (9-12) and graduation year tracking
+- Automated student account creation with grade-level OUs (K-12) and graduation year tracking
 - Role-based staff provisioning (Teacher, Administrator, IT, Support Staff)
 - FERPA-compliant audit logging for all identity operations
 - Batch processing from CSV exports (Student Information System integration)
@@ -133,7 +133,7 @@ PowerShell modules for student/staff account lifecycle management, built to oper
 
 ### Full-Stack PaaS CRM Replacement, Roofing Industry (Consulting Delivery Outside K-12)
 *Included as evidence of end-to-end build and integration capability.*
-Designed and delivered a complete PaaS replacement for a roofing company's SaaS CRM subscription built from scratch in approximately 45 days and returned positive ROI within 3 months versus their prior per-seat licensing costs (~$18K/m + 16K/yr). The system replaced the vendor CRM with a custom Glide-based frontend backed by an integrated automation and data pipeline.
+Designed and delivered a complete PaaS replacement for a roofing company's SaaS CRM subscription built from scratch in approximately 45 days and returned positive ROI within 3 months versus their prior per-seat licensing costs (~$18K/month plus $16K/year). The system replaced the vendor CRM with a custom Glide-based frontend backed by an integrated automation and data pipeline.
 
 **What it replaced and why:**
 The client's existing AccuLynx SaaS CRM handled job tracking but required office-bound staff to manually look up material availability, calculate pricing, and coordinate field dispatch (Hail map overlays to residential targeted zones).

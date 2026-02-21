@@ -19,10 +19,9 @@ At 23,000 managed Windows 11 devices, even a 1% non-compliance rate means 230 en
 ### `Get-M365ServiceHealthSnapshot.ps1`
 Captures active service health incidents and advisories from Microsoft 365. Useful for the morning operations check and for communicating to staff before a degraded service becomes a flood of help desk tickets.
 
-Canvas LMS authenticates via Entra ID SSO, an Exchange Online or Entra incident can affect Canvas availability. This script catches it before teachers report it.
+Canvas LMS authenticates via Entra ID SSO; an Exchange Online or Entra incident can affect Canvas availability. This script catches it before teachers report it.
 
 ### `Get-AutopilotProvisioningStatus.ps1`
-*(New addition, KISD-relevant post-deployment)*
 Tracks Autopilot deployment success rate for recent device enrollments. Surfaces devices that enrolled but failed to complete provisioning, devices waiting for Autopilot profile assignment, and new student accounts without a linked device.
 
 After a large Autopilot deployment (23,000 devices), the ongoing work is ensuring new devices enroll cleanly, staff refreshes, device replacements, additions from bond-funded purchases. This script catches provisioning failures before the student or teacher reports a bare device.
@@ -43,4 +42,4 @@ Each script outputs a structured object and accepts export parameters:
 - Scripts use Microsoft Graph API and M365 admin cmdlets
 - Auth handled via service principal or delegated credentials (not embedded)
 - Demo mode parameter available for safe portfolio demonstration without live tenant
-- Adapt connection handling for your specific auth method before production use
+- Connection patterns follow service principal auth for automation and delegated credentials for interactive use; permission scopes are documented in each script header

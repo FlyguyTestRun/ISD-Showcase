@@ -12,7 +12,7 @@
 PowerShell automation for student and staff identity lifecycle in K-12 environments. The **K12Identity** module implements K-12 naming conventions and OU structures that scale from a pilot classroom to a 34,000-student district. The patterns here are built for operating an existing Entra ID environment, extending, maintaining, and troubleshooting, not just initial setup.
 
 **Key Features:**
-- **Automated Student Provisioning:** Bulk student account creation with grade-level OUs (9-12)
+- **Automated Student Provisioning:** Bulk student account creation with grade-level OUs (K-12, Kindergarten through Grade 12)
 - **Staff Account Management:** Role-based access controls (Teacher, Administrator, IT, Support)
 - **FERPA-Compliant Audit Logging:** All identity operations logged for compliance
 - **Graduation Year Tracking:** Automatic OU placement based on graduation year
@@ -161,6 +161,8 @@ Emma,Williams,34567890,11,2026
 ### Student OU Hierarchy
 ```
 OU=Students,DC=keller,DC=edu
+├── OU=GradeK,OU=Students (Kindergarten, no graduation year sub-OU)
+├── OU=Grade1 through OU=Grade8 (Elementary/Middle, same pattern, no graduation year sub-OU)
 ├── OU=Grade9,OU=Students
 │   ├── OU=2028 (Freshman class graduating 2028)
 │   └── OU=2029
@@ -177,8 +179,9 @@ OU=Students,DC=keller,DC=edu
 ```
 
 **Rationale:**
-- Grade-level OUs enable targeted Group Policy (e.g., computer lab access for Grade 12 only)
-- Graduation year sub-OUs simplify bulk operations (e.g., disable all 2025 graduates at once)
+- Grade-level OUs enable targeted Group Policy (e.g., computer lab access for Grade 12 only; Autopilot device assignment starts at Grade 5)
+- Graduation year sub-OUs (Grades 9-12) simplify bulk operations such as disabling all 2025 graduates at once
+- K-8 students use grade-level OUs only; graduation year tracking begins at Grade 9
 
 ### Staff OU Hierarchy
 ```
@@ -269,45 +272,36 @@ OU=Staff,DC=keller,DC=edu
 
 ## Deployment Guide
 
-### Prerequisites
-- Windows Server 2016+ with Active Directory Domain Services (ADDS)
-- PowerShell 5.1+ with ActiveDirectory module
-- Appropriate AD permissions (Account Operator or delegated OU control)
+This module was built and tested in a sandbox environment structured to mirror real KISD production requirements: full AD hierarchy, OU layout matching district policy, and all configuration a new deployment would require. The steps below reflect the same sequence an IT team would follow when deploying against a live domain.
 
-### Installation
+**Prerequisites:** Windows Server 2016+, PowerShell 5.1+ with the ActiveDirectory module, and delegated OU permissions (Account Operator or equivalent).
+
+**Import and verify:**
 ```powershell
-# Import the KISDIdentity module
 Import-Module .\KISDIdentity.psm1
-
-# Verify module loaded successfully
 Get-Command -Module KISDIdentity
 ```
 
-### Initial Setup
-1. **Create OU Structure:**
-   ```powershell
-   # Run once to create base OU hierarchy
-   New-ADOrganizationalUnit -Name "Students" -Path "DC=keller,DC=edu"
-   New-ADOrganizationalUnit -Name "Grade9" -Path "OU=Students,DC=keller,DC=edu"
-   # Repeat for Grade10, Grade11, Grade12, Staff, etc.
-   ```
+**Create the OU structure** (run once against the target domain):
+```powershell
+New-ADOrganizationalUnit -Name "Students" -Path "DC=keller,DC=edu"
+New-ADOrganizationalUnit -Name "GradeK" -Path "OU=Students,DC=keller,DC=edu"
+New-ADOrganizationalUnit -Name "Grade9" -Path "OU=Students,DC=keller,DC=edu"
+# Repeat for Grade1-Grade8, Grade10, Grade11, Grade12, Staff OUs
+```
 
-2. **Configure Audit Logging:**
-   ```powershell
-   # Create log directory
-   New-Item -Path "C:\Logs" -ItemType Directory -Force
+**Configure audit logging:**
+```powershell
+New-Item -Path "C:\Logs" -ItemType Directory -Force
+# Apply ACL to restrict to IT admin group; see Write-KISDAuditLog documentation above
+```
 
-   # Set permissions (IT admins only)
-   $Acl = Get-Acl "C:\Logs"
-   # Configure ACL to allow IT group read/write
-   ```
-
-3. **Test with Sample Account:**
-   ```powershell
-   New-KISDStudentAccount -FirstName "Test" -LastName "Student" `
-                          -StudentID "99999999" -GradeLevel 9 `
-                          -GraduationYear 2028 -WhatIf
-   ```
+**Validate before production use:**
+```powershell
+New-KISDStudentAccount -FirstName "Test" -LastName "Student" `
+                       -StudentID "99999999" -GradeLevel 9 `
+                       -GraduationYear 2028 -WhatIf
+```
 
 ---
 
@@ -328,7 +322,7 @@ Get-Command -Module KISDIdentity
 1. **Graduate Seniors:** Batch disable all students in `OU=2025,OU=Grade12`
 2. **Move to Archive OU:** Retain accounts for summer school access
 3. **Final Deletion:** After 1 year, delete archived accounts (retention policy)
-4. **Grade Promotion:** Update remaining students' grade levels (9→10, 10→11, 11→12)
+4. **Grade Promotion:** Advance all enrolled students one grade level (K through 11); Grade 12 students are processed in the graduation batch above
 
 ### Staff Onboarding/Offboarding
 - **New Hire:** Run `New-KISDStaffAccount` on first day of employment

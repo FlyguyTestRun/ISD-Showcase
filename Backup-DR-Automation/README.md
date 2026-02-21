@@ -58,7 +58,7 @@ Monthly backup reports cover: job success rates (target >95%), storage utilizati
 
 Quarterly DR test reports document: RTO validation, RPO assessment, application validation (SIS login, AD auth, file access), and infrastructure recommendations.
 
-FERPA requires 7-year audit log retention for student data operations, backup job logs and DR test records fall under this requirement.
+FERPA requires 7-year audit log retention for student data operations; backup job logs and DR test records fall under this requirement.
 
 ---
 
