@@ -4,6 +4,22 @@ Engineering portfolio calibrated to KISD's operating environment: 34,000 student
 
 ---
 
+## Dashboards
+
+Four operational KPI dashboards covering enrollment trends, identity provisioning velocity, Autopilot device deployment, and campus capacity. Built at KISD-approximate scale (34,000 students, 23,000 managed devices, 22+ campuses).
+
+![Enrollment Overview: grade band distribution, year-over-year change, over-capacity campus flags](./Power-BI-Dashboards/Dashboards/KISD-Page1-Enrollment.png)
+
+![Provisioning and Identity: August surge, provisioning SLA, FERPA audit completeness](./Power-BI-Dashboards/Dashboards/KISD-Page2-Provisioning.png)
+
+![Device Assignment: Autopilot fleet status by campus, provisioning success rate, devices not seen](./Power-BI-Dashboards/Dashboards/KISD-Page3-Devices.png)
+
+![Campus Capacity: enrollment vs. capacity with >95% red and >85% amber alerts](./Power-BI-Dashboards/Dashboards/KISD-Page4-Capacity.png)
+
+[Full PDF export](./Power-BI-Dashboards/Dashboards/KISD-Dashboards.pdf) | [Power-BI-Dashboards/](./Power-BI-Dashboards/) for data model and additional dashboards
+
+---
+
 ## What's Here
 
 | Section | What it covers |
@@ -16,12 +32,6 @@ Engineering portfolio calibrated to KISD's operating environment: 34,000 student
 | [Dell-Hardware-Management/](./Dell-Hardware-Management/) | iDRAC/Redfish server health and firmware lifecycle automation |
 | [Network-Operations-Playbooks/](./Network-Operations-Playbooks/) | Change window, RCA, and monitoring baseline templates |
 | [Mentoring-Case-Studies.md](./Mentoring-Case-Studies.md) | Real mentoring scenarios with operational specifics |
-
-**Dashboard Exports (PDF: click filename, then Download to view)**
-- [KISD Dashboards: All 4 Pages](./Power-BI-Dashboards/Dashboards/KISD-Dashboards.pdf) (Enrollment, Provisioning, Device Assignment, Campus Capacity)
-- [IT Infrastructure Health](./Power-BI-Dashboards/IT-Infrastructure-Health/IT-Infrastructure-Dashboard.pdf)
-- [Network Infrastructure Monitoring](./Power-BI-Dashboards/Network-Infrastructure-Monitoring/Network-Infrastructure-Dashboard.pdf)
-- [Student Enrollment Analytics](./Power-BI-Dashboards/Student-Enrollment-Analytics/Student-Enrollment-Dashboard.pdf)
 
 ---
 
