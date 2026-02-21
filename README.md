@@ -1,6 +1,6 @@
 # K-12 Systems Engineering Portfolio
 
-Engineering portfolio calibrated to KISD's operating environment: 34,000 students, 23,000 Windows 11 devices managed via Autopilot and Intune, Entra ID at full district scale, M365 A5, and Canvas as the LMS. The focus is operational depth: identity lifecycle, network segmentation, backup and DR under school-calendar constraints, and KPI dashboards built for leadership review.
+Engineering portfolio calibrated to the ISD's operating environment: estimated: 34,000 students, 23,000 Windows 11 devices managed via Autopilot and Intune, Entra ID at full district scale, M365 A5, and Canvas as the LMS. I am very excited to work with Canvas with Power BI integrations! API integrations and automations is a huge strength of mine and excited to assist in these any way I can. The focus of this repo is for demonstrative purpose of familiarity of operational needs and depth of identity lifecycle, network segmentation, backup and DR under calendar constraints, and KPI dashboards built for leadership review as a sample showcase of live direct reporting metrics that can integrate with Canvas as the LLM, backed up for presentations with .PNG and .PDF files. 
 
 ---
 
