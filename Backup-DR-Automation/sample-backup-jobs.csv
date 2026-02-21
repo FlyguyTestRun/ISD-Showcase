@@ -1,0 +1,21 @@
+JobName,Status,StartTime,EndTime,Duration,DataSize,BackupType,Repository
+SIS-Database-Daily,Success,2026-02-15 02:00:00,2026-02-15 02:45:00,45,125GB,Incremental,Repository-A
+FileServer-Staff-Daily,Success,2026-02-15 01:00:00,2026-02-15 01:35:00,35,89GB,Incremental,Repository-A
+FileServer-Students-Daily,Success,2026-02-15 01:30:00,2026-02-15 02:15:00,45,156GB,Incremental,Repository-B
+DomainControllers-Daily,Success,2026-02-15 03:00:00,2026-02-15 03:12:00,12,25GB,Incremental,Repository-A
+Exchange-Online-Archive,Success,2026-02-15 04:00:00,2026-02-15 04:28:00,28,67GB,Full,Repository-C
+SIS-Database-Weekly,Success,2026-02-14 02:00:00,2026-02-14 03:30:00,90,125GB,Full,Repository-A
+FileServer-Staff-Weekly,Success,2026-02-14 01:00:00,2026-02-14 02:45:00,105,89GB,Full,Repository-A
+FileServer-Students-Weekly,Success,2026-02-14 01:30:00,2026-02-14 03:45:00,135,156GB,Full,Repository-B
+DomainControllers-Weekly,Success,2026-02-14 03:00:00,2026-02-14 03:45:00,45,25GB,Full,Repository-A
+Canvas-LMS-Backup,Warning,2026-02-15 05:00:00,2026-02-15 05:42:00,42,34GB,Incremental,Repository-C
+SIS-Database-Daily,Success,2026-02-14 02:00:00,2026-02-14 02:42:00,42,124GB,Incremental,Repository-A
+FileServer-Staff-Daily,Success,2026-02-14 01:00:00,2026-02-14 01:32:00,32,88GB,Incremental,Repository-A
+FileServer-Students-Daily,Success,2026-02-14 01:30:00,2026-02-14 02:12:00,42,155GB,Incremental,Repository-B
+DomainControllers-Daily,Success,2026-02-14 03:00:00,2026-02-14 03:11:00,11,25GB,Incremental,Repository-A
+Exchange-Online-Archive,Failed,2026-02-14 04:00:00,2026-02-14 04:05:00,5,0GB,Full,Repository-C
+SIS-Database-Daily,Success,2026-02-13 02:00:00,2026-02-13 02:47:00,47,126GB,Incremental,Repository-A
+FileServer-Staff-Daily,Success,2026-02-13 01:00:00,2026-02-13 01:38:00,38,90GB,Incremental,Repository-A
+FileServer-Students-Daily,Success,2026-02-13 01:30:00,2026-02-13 02:18:00,48,158GB,Incremental,Repository-B
+DomainControllers-Daily,Success,2026-02-13 03:00:00,2026-02-13 03:13:00,13,25GB,Incremental,Repository-A
+Canvas-LMS-Backup,Success,2026-02-13 05:00:00,2026-02-13 05:38:00,38,34GB,Incremental,Repository-C

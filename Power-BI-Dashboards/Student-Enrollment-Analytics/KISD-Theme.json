@@ -1,0 +1,143 @@
+{
+  "name": "KISD Professional",
+  "dataColors": [
+    "#1F4E79",
+    "#2E74B5",
+    "#00B0F0",
+    "#375623",
+    "#C55A11",
+    "#C00000",
+    "#7030A0",
+    "#404040"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#1F4E79",
+  "tableAccent": "#2E74B5",
+  "bad":     "#C00000",
+  "neutral": "#C55A11",
+  "good":    "#375623",
+  "textClasses": {
+    "callout": {
+      "fontSize": 28,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1F4E79"
+    },
+    "title": {
+      "fontSize": 14,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1F4E79"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#212529"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#6C757D"
+    }
+  },
+  "visualStyles": {
+    "card": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }],
+        "dataLabels": [
+          {
+            "color": { "solid": { "color": "#1F4E79" } },
+            "fontSize": 28,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "categoryLabels": [
+          {
+            "color": { "solid": { "color": "#6C757D" } },
+            "fontSize": 10,
+            "fontFamily": "Segoe UI"
+          }
+        ]
+      }
+    },
+    "clusteredBarChart": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }]
+      }
+    },
+    "clusteredColumnChart": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }]
+      }
+    },
+    "lineChart": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }],
+        "lineStyles": [
+          {
+            "strokeWidth": 2
+          }
+        ]
+      }
+    },
+    "areaChart": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }]
+      }
+    },
+    "donutChart": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }]
+      }
+    },
+    "gauge": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }],
+        "header": [
+          {
+            "fontColor": { "solid": { "color": "#1F4E79" } },
+            "fontSize": 11,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }],
+        "columnHeaders": [
+          {
+            "backColor": { "solid": { "color": "#1F4E79" } },
+            "fontColor": { "solid": { "color": "#FFFFFF" } },
+            "fontSize": 11,
+            "fontFamily": "Segoe UI Semibold",
+            "bold": true
+          }
+        ]
+      }
+    },
+    "matrix": {
+      "*": {
+        "background": [{ "solid": { "color": "#FFFFFF" } }],
+        "columnHeaders": [
+          {
+            "backColor": { "solid": { "color": "#1F4E79" } },
+            "fontColor": { "solid": { "color": "#FFFFFF" } },
+            "fontSize": 11,
+            "fontFamily": "Segoe UI Semibold",
+            "bold": true
+          }
+        ],
+        "rowHeaders": [
+          {
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 10
+          }
+        ]
+      }
+    }
+  }
+}
