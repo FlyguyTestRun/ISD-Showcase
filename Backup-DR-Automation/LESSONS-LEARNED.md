@@ -35,7 +35,7 @@ $Job.SetOptions($JobOptions)
 ### Mistake: Backup Jobs Running During Unusual Office Hours
 
 **What Happened:**
-Large file server backup job configured to run at 2 AM, but unusual Trial hours created a backup retention problem during "high-stakes" trial, back-up took hours to complete. Degraded users access and network performance and slow file access.
+Large file server backup job configured to run at 2 AM, but unusual trial team hours created a backup retention problem during "high-stakes" trial, back-up took hours to complete. Degraded users access and network performance and slow file access.
 
 **Impact:**
 - Our trial team experienced slow logons (when returning at 4am to continue time sensitve work for morning court time and file access was limited via our VPN during the critical morning hours
