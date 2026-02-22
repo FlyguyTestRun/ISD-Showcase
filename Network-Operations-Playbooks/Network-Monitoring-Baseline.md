@@ -1,6 +1,6 @@
 # Network Monitoring Baseline
 
-This baseline defines a practical minimum for senior-level network operations visibility.
+This baseline defines a practical minimum for "mock" network operations visibility.
 
 ## Core Metrics
 
