@@ -39,4 +39,4 @@
 - Post-change verification steps:
 - 7-day follow-up check:
 
-*Summarized for ARD-ARCH-NET-001, my systems managment for network architecture decision making*
+*Summarized for ARD-ARCH-NET-001, my systems managment for network architecture decision making for concise file records ex "why, what failed, how to fix, who to send reports to"*
