@@ -6,15 +6,15 @@
 
 ## Professional Summary
 
-Systems Engineer with 24+ years in enterprise Microsoft infrastructure: legal technology firms in Dallas (Trial IT), consulting delivery across professional services clients, and education-aligned operations work at Mansfield ISD and through CoreSkills4AI. The identity lifecycle design, FERPA/CIPA compliance controls, and enrollment-cycle automation in this portfolio were developed through that consulting work and map directly to ISD operational requirements. The same engineering discipline that protects sensitive client data in legal environments applies to protecting student data at district scale.
+Systems Engineer with 24+ years in Microsoft infrastructure: legal technology firms in Dallas supported by Trial IT consulting. Delivering across legal, financial, construction and healthcare industries. Education-aligned operations work at Mansfield ISD (AO1 and IT Services, LLC), ongoing training modules and instructor training through CoreSkills4AI (consulting in platform design and instructional workflow automations). The identity lifecycle design, industry protocols (HIPPA, FERPA/CIPA) compliance controls, and enrollment-cycle automation in this portfolio were developed through consulting work and map directly to ISD operational job requirements. The same engineering discipline that protects sensitive client data in legal environments applies to protecting student data at district scale.
 
-Core strengths include secure systems design, infrastructure automation, operational reporting, and documentation that enables junior engineers and support teams to execute consistently.
+Core strengths include secure systems design, infrastructure automation, operational reporting, and documentation that enables stakeholders, engineers and support teams to execute consistently.
 
 ---
 
 ## Core Competencies
 
-- **Microsoft 365 & Azure:** Exchange Online, SharePoint, Teams, Entra ID (Azure AD), Intune, Conditional Access
+- **Microsoft 365 & Azure:** Exchange Online, SharePoint, Teams, Entra ID (Azure AD), Intune, Conditional Access Controls
 - **Windows Server & Active Directory:** ADDS, Group Policy, DNS, DHCP, File Services, Failover Clustering
 - **Enterprise Infrastructure:** VMware vSphere, Hyper-V, Dell PowerEdge, Veeam Backup & Replication
 - **Automation & Scripting:** PowerShell modules/runbooks, Python, API integration patterns
@@ -27,35 +27,35 @@ Core strengths include secure systems design, infrastructure automation, operati
 ### CoreSkills4AI | Technical Lead
 **2024 - Present | Fort Worth, TX**
 
-CoreSkills operated as a trainer-to-trainers program, developing mid-size company IT analysts and technicians who needed to build production-grade skills in automation, observability, and infrastructure operations.
+CoreSkills operates as a trainer-to-trainers program, developing mid-size company IT analysts and technicians who needed to build production-grade skills in automation, observability, and infrastructure operations.
 
-- Designed and ran Docker-based lab environments simulating production Microsoft infrastructure, supporting 20+ concurrent learners across Windows Server, Active Directory, and cloud identity workflows
-- Built a multi-agent orchestration system in Python with a 3-layer routing engine agnostic to platform and built with open-source LLMs (keyword → fuzzy match → LLM escalation) and confidence-based dispatch used as a live teaching platform for applied AI/ML automation concepts
-- Developed curriculum for KPI pipeline construction from API calls: taught analysts to pull operational data from REST endpoints, clean and transform it with Python, and deliver dashboards via Grafana and Prometheus
+- Designed and ran Docker-based lab environments simulating production Microsoft infrastructure, supporting learners across Windows Server, Active Directory, and cloud identity workflows
+- Built a multi-agent orchestration system in Python with a 6-layer routing engine agnostic to platform and built with open-source tools and local LLMs (keyword → fuzzy match → LLM escalation) and confidence-based dispatch used as a live teaching platform for applied AI/ML automation concepts
+- Developed 20+ core curriculum modules including systems infrastructure, networking architecture, CMR, CMMS application design and KPI pipeline construction from API calls: taught analysts to pull operational data from REST endpoints, clean and transform it with Python, and deliver dashboards via Grafana and Prometheus
 - Deployed PostgreSQL-backed data pipelines for tracking training outcomes and platform metrics; covered schema design, query optimization, and migration/cleanup workflows
-- Trained technicians in infrastructure change discipline: pre-change baseline capture, firewall rule (allow/deny) execution, post-change verification, and rollback criteria, not just theory, but supervised live execution
-- Produced ADR-style (Architecture Decision Record) documentation for all major platform design choices, establishing a documentation-first standard that trainees carried into their production environments
-- Created platform-agnostic integration modules across Microsoft 365, Entra ID, Intune, Azure, and AWS designed so trainees could adapt patterns to their employer's stack without relearning from scratch
+- Training instructional technicians in infrastructure change discipline: pre-change baseline capture, firewall rule (allow/deny) execution, post-change verification, and rollback criteria, not just theory, but supervised live execution
+- Produced ADR-style (Architecture Decision Record) documentation for all major platform design choices, establishing a documentation-first standard that trainees carried from our sandbox enviorments into their production environments
+- Created platform-agnostic integration modules across Microsoft 365, Entra ID, Intune, Azure, and AWS designed so trainees could adapt patterns to their employer's stack without relearning from scratch, this process was key to integrating the design of the modules to clients exact needs and existing employer's stack
 
-**Languages & Scripting:** Python 3.x, PowerShell 5.1/7.x, Bash, SQL, YAML, HTML/CSS (automated report generation), JavaScript
+**Languages & Scripting:** Python 3.x, PowerShell 5.1/7.x, Bash, SQL, YAML, HTML/CSS (automated report generation), JavaScript, Rush built into different modules.
 
-**AI/ML & Automation:** Claude API (Anthropic SDK), OpenAI API patterns, LLM orchestration, multi-agent dispatch systems, RAG (Retrieval-Augmented Generation), vector embeddings, fuzzy string matching (rapidfuzz), confidence-based routing, prompt engineering, semantic search
+**AI/ML & Automation:** Training modules for integrating AI beyond co-pilot with safe gaurdrails into companies existing stack for Claude API (Anthropic SDK), OpenAI, Gemini API patterns, LLM orchestration, multi-agent dispatch systems, RAG (Retrieval-Augmented Generation), vector embeddings, fuzzy string matching (rapidfuzz), confidence-based routing, prompt engineering, semantic search
 
 **Observability & Monitoring:** Grafana, Prometheus, alertmanager, SNMP v2c/v3, WMI, Dell iDRAC REST/Redfish API, HP iLO reference, syslog pipelines, KPI dashboards (Power BI, Streamlit)
 
 **Databases & Data Engineering:** PostgreSQL, SQLAlchemy ORM, Redis, SQL Server, Pandas, NumPy, ETL pipeline design, schema migration, query optimization, CSV/JSON/XML data transformation
 
-**Containers & Virtualization:** Docker, Docker Compose, VMware vSphere/ESXi/vCenter, Hyper-V, Windows containers, Linux containers, VM snapshot and recovery workflows
+**Containers & Virtualization:** Google Colab for sandbox development and dev collaborations, Docker, Docker Compose, VMware vSphere/ESXi/vCenter, Hyper-V, Windows containers, Linux containers, VM snapshot and recovery workflows
 
-**Operating Systems & Platforms:** Windows Server 2008–2022, Ubuntu/Debian Linux, RHEL-based Linux, macOS (development), Windows 10/11, ChromeOS (MDM reference), BIOS/UEFI firmware configuration
+**Operating Systems & Platforms:** Windows Server 2008–2022, Ubuntu/Debian Linux configurations for system hardware constraints, RHEL-based Linux, macOS (developmental), Windows 10/11, ChromeOS (MDM reference), BIOS/UEFI firmware configurations scripts for assisting none coding clients
 
 **Microsoft Cloud & Identity:** Entra ID (Azure AD), Intune (MAM/MDM), Microsoft Graph API, Conditional Access, Exchange Online, SharePoint Online, Teams, Azure AD Connect, ADFS, SSPR, M365 Defender, Azure Resource Manager (ARM), Azure CLI
 
-**Cloud Platforms:** Azure (IaaS/PaaS), AWS (IAM, EC2, S3 patterns), Google Cloud Identity, cross-cloud federation patterns
+**Cloud Platforms:** Azure (IaaS/PaaS), AWS (IAM, EC2, S3 patterns), Google Cloud Identity, cross-cloud federation patterns, building CRM/CMMS tools for SaaS integrations
 
 **Networking & Security:** Cisco IOS (reference/config), DHCP, DNS, VLAN segmentation (802.1Q), ACL design, firewall rule management (allow/deny policy), CIPA-compliant content filtering, FERPA/COPPA compliance controls, VPN, 802.1X (reference)
 
-**Development & CI/CD:** GitHub Actions, Git workflows, pytest, unittest, API integration (REST/JSON), FastAPI/Flask (reference patterns), Streamlit
+**Development & CI/CD:** GitHub Actions, Git workflows, GitLabs using pytest, unittest, API integration (REST/JSON), FastAPI/Flask (reference patterns), Streamlit
 
 **Hardware Platforms:** Dell PowerEdge (iDRAC 8/9), HP ProLiant (iLO reference), rack infrastructure documentation, firmware lifecycle management
 
@@ -65,8 +65,8 @@ CoreSkills operated as a trainer-to-trainers program, developing mid-size compan
 **2013 - 2024 | Dallas-Fort Worth, TX**
 
 - Delivered consulting and engineering services for legal and professional-services clients
-- Architected secure Microsoft environments (Windows Server, Active Directory, Exchange, Microsoft 365)
-- Implemented PowerShell automation to improve standards enforcement and operational speed
+- Architected secure Microsoft environments (Windows Server, VPN access controls, Active Directory, Exchange, Microsoft 365)
+- Implemented PowerShell automation to improve standards enforcement and operational speed for client backup and data retention
 - Designed hybrid identity and cloud integration patterns for secure, scalable growth
 - Trained client teams on Microsoft collaboration/security tooling and support best practices
 
@@ -107,9 +107,9 @@ CoreSkills operated as a trainer-to-trainers program, developing mid-size compan
 
 ## Beyond the Work
 
-I'm a licensed pilot. General aviation is my passion, with powered and unpowered paragliding when I have time. Aviation transfers directly into infrastructure work: pre-flight checklists, go/no-go criteria, and the habit of never skipping a verification step under pressure. Those patterns show up in how I design runbooks and train engineers to execute changes. I also built a multi-agent orchestration system (MAO) for CoreSkills, a Python-based dispatch platform that routes queries through keyword, fuzzy, and LLM layers, designed with the same discipline: redundant validation loops before any state change.
+I'm a licensed pilot. General aviation is my passion, with powered and unpowered paragliding when I have time. Aviation transfers directly into infrastructure work: pre-flight checklists, go/no-go criteria, and the habit of never skipping a verification step under pressure. Those patterns show up in how I design runbooks, much like an airplane has dual reduntancy failsafes (two magnetos when one is required, dual instruments for crosschecks) I prefer to design with verification loops, validation built into scripting and PRDs that create feedback loops and ADR reporting moduled on machine learning design and human-in-the-loop approval allowing for systems engineers awareness to execute changes. I also built a multi-agent orchestration system (MAO) for AIXaas a startup company for AI automation in workflow, a Python-based dispatch platform that routes queries through keyword, fuzzy, and LLM layers, designed with the same discipline: redundant validation loops before any state change.
 
-Outside of work, I'm a DFW local with two daughters who attend school in the Keller ISD. That's not background noise. It means I care about this district's technology working the way it should for the same reasons every parent in these schools does. I want to help make that happen.
+Outside of work, I'm a DFW local with two daughters who attend school in the Keller ISD. That's not background noise. It means I care about this district's technology working the way it should for the same reasons every parent in these schools does. I want to help make that happen. I have built my career on educating on IT design for users of every level. I am passinonate about systems design and excited for the advancments in machine learning coupled with next GenAI integrations. I want to be at the forefront of the educational advancments in how that will integrate into the educational sector of K-12 and Keller will be my home for the foreseeable future.
 
 I also spend time building integration projects at the intersection of technology and wellness, exploring how automation, data pipelines, and API-connected platforms can support behavioral health and personal development workflows. It keeps my consulting skills sharp and my curiosity honest.
 
@@ -125,27 +125,27 @@ PowerShell modules for student/staff account lifecycle management, built to oper
 - Batch processing from CSV exports (Student Information System integration)
 
 ### Enterprise Platform Engineering (CoreSkills4AI)
-- Architected a Docker-based lab platform where each "classroom" is a containerized environment, pre-imaged with instructor content, student files, and cert-track tooling, allowing repeatable spin-up across Windows Server, Linux, and cloud identity scenarios
+- Architected a Docker-based lab platform where each "classroom" has a unique tool set for the users descretion (optional expansions of thier choosing) the containerized environment, pre-imaged with instructor content, gives starting points for users with little to no-code experience to showcase the advantages of using CLIs over GUIs, integrated a student files system to evalute both the students and instructors, and cert-track tooling, allowing repeatable spin-up across Windows Server, Linux, MacOS users and cloud identity scenarios
 - Built a Python-based multi-agent orchestration system with keyword, fuzzy, and LLM routing layers; used as both a teaching artifact for AIXaaS (an iSaaS platform) and a real platform component for routing trainee queries to the right learning module
 - Deployed Grafana and Prometheus observability stacks so trainees could instrument their own lab environments and learn monitoring discipline against infrastructure (KPIs) they were actively building
 - Designed curriculum modules agnostic to platform connecting Microsoft 365, Entra ID, and Intune to AWS and Google identity, trainees left able to operate in whichever stack their employer ran, not just the one they studied
 - Produced implementation-grade reference documentation for AI-assisted workflows in modern Microsoft environments, written to be handed off without follow-up explanation
 
-### Full-Stack PaaS CRM Replacement, Roofing Industry (Consulting Delivery Outside K-12)
+### Full-Stack PaaS CRM Replacement, Construction Industry 2025
 *Included as evidence of end-to-end build and integration capability.*
-Designed and delivered a complete PaaS replacement for a roofing company's SaaS CRM subscription built from scratch in approximately 45 days and returned positive ROI within 3 months versus their prior per-seat licensing costs (~$18K/month plus $16K/year). The system replaced the vendor CRM with a custom Glide-based frontend backed by an integrated automation and data pipeline.
+Designed and delivered a complete PaaS/SaaS replacement stack for a roofing company's SaaS CRM subscription built from scratch (MVP in 8 days) and approximately 45 days rolled new stack solution integrating API calls and reporting metrics that project returned positive ROI within 3 months versus their prior per-seat licensing costs (~$18K/month plus $16K/year). The system replaced the vendor CRM with a custom Glide-based frontend backed by an integrated automation and data pipeline.
 
 **What it replaced and why:**
-The client's existing AccuLynx SaaS CRM handled job tracking but required office-bound staff to manually look up material availability, calculate pricing, and coordinate field dispatch (Hail map overlays to residential targeted zones).
+The client's existing AccuLynx SaaS CRM handled job tracking but required office-bound staff to manually look up material availability, calculate pricing, and coordinate field dispatch (with up-to-date hail map overlays to residential targeted zones).
 
 **What was built:**
-- **Frontend:** Glide app serving as the client-facing CRM interface accessible to field contractors directly on mobile with no office return required for job lookups, pricing, or scheduling
+- **Frontend:** Glide app serving as the white label client-facing CRM interface accessible to field contractors, vendors and clients directly on mobile with no office return required for job lookups, pricing, or scheduling
 - **Real-time vendor supply integration:** Live API connections to material suppliers provided field contractors with current shingle and material availability at the point of client consultation contractors could quote and commit on-site with accurate inventory data
-- **Geosync-driven dispatch and routing:** Integrated geospatial data to optimize contractor scheduling and client pickup routing based on live location, reduced drive time and improved same-day appointment throughput
-- **Storm event automation:** Connected hail map and storm tracking feeds; qualifying weather events in the service area automatically flagged affected client addresses, triggered outreach sequences, and pre-populated job records
-- **Dynamic pricing engine:** Material and labor estimates adjusted in real time based on supplier availability and storm-season demand, no manual price table updates during high-volume periods
+- **Geosync-driven dispatch and routing:** Integrated geospatial data to optimize contractor scheduling and client pickup routing based on live location, reduced drive time and improved same-day appointment throughput and costomer arrival feedback
+- **Storm event automation:** Connected hail map and storm tracking feeds; qualifying weather events in the service area automatically flagged affected client addresses for inspection and follow-up calls, triggered outreach sequences, and pre-populated job records
+- **Dynamic pricing engine:** Material and labor estimates adjusted in real time based on supplier API calls over weekly availability checks and storm-season demand planning, requiring no manual price table updates during high-volume periods
 - **End-to-end workflow automation:** Damage assessment scheduling, insurance adjuster coordination, material order tracking, and job completion follow-up all triggered by pipeline state transitions rather than manual staff entry
 
 **Outcome:** Client eliminated the SaaS subscription, gained field-operational capability their previous tool never provided, and recovered build cost within one post-storm season cycle.
 
-**Technologies:** Glide (frontend/PaaS), Python (backend pipeline), REST APIs, webhook event handlers, geospatial data integration, AccuLynx API, supplier inventory APIs, storm/hail tracking data feeds, automated workflow orchestration, JSON/CSV data transformation
+**Technologies Used:** Glide (frontend/PaaS), Python (backend pipeline), REST APIs, webhook event handlers, geospatial data integration, supplier inventory APIs, storm/hail tracking data feeds, automated workflow orchestration, JSON/CSV data transformation pipelined into Google Drive
