@@ -26,13 +26,13 @@
 
 ## Case Study 3: Network Change Confidence Building (CoreSkills)
 
-**Situation:** CoreSkills technicians and analysts (mid-size company IT staff skill building) were hesitant to execute changes due to uncertainty. CoreSkills operated as a trainer-to-trainers program, developing analysts in KPI pipeline automation, Python-based data workflows, and infrastructure operations. Integrating Grafana dashboards into metrics and KPI reports. Using panda libraries scripting logic and fuzzy matching to eliminate clarical errors and duplications. After reciving a 99.9% confidence score is the data then approved ready for validation by analysts saving tie out time in processing.
+**Situation:** IT analysts at a mid-size company were hesitant to execute infrastructure changes despite having the technical knowledge to do so. The gap was execution confidence: uncertainty about rollback procedures, no documented verification sequence, and no standard pre-change baseline to measure against.
 
 **Approach:** Introduced a change-window checklist and RCA template, then rehearsed a low-risk change in controlled sequence. For network confidence specifically, the session focused on firewall and rule additions (allow/deny) as the execution scenario.
 
 **Mentoring Focus:** Pre-change state capture, explicit rollback and merge criteria, and post-change verification discipline.
 
-**Outcome:** The CoreSkills technician executed cleaning a dataset behing the companies existing firewall with allow/deny rules as gaurdrails for failure and additional system enhancment in full sequence: pre-change state documented, rule applied, connectivity verified against the baseline. The discipline of "evidence before and after every change" became a repeatable habit that carried directly into their production environments.
+**Outcome:** The CoreSkills technician executed cleaning a dataset behind the company's existing firewall with allow/deny rules as guardrails for failure and additional system enhancement in full sequence: pre-change state documented, rule applied, connectivity verified against the baseline. The discipline of "evidence before and after every change" became a repeatable habit that carried directly into their production environments.
 
 ---
 

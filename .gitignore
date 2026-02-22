@@ -1,0 +1,39 @@
+# PowerShell
+*.pssproj
+*.psproj
+
+# Credentials and secrets
+*.credential
+*.cred
+*.key
+secrets.json
+.env
+
+# Logs
+*.log
+Logs/
+
+# OS artifacts
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temp files
+*.tmp
+~$*
+
+# IDE / editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Claude Code editor settings
+.claude/
+
+# Local-only interview prep materials (not for public repo)
+ISD-Study/
+
+# Local-only files (not for public repo)
+Canvas-M365-Integration/
+
