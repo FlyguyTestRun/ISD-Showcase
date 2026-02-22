@@ -4,7 +4,7 @@
 
 **Purpose:** Daily operational visibility into identity health, device compliance, backup status, and endpoint security at large-district scale.
 
-**Mock data profile:** 34,000 students, 4,500 staff, 23,000 managed Windows 11 devices (Surface, grades 5-12).
+**Mock data profile:** 34,000 students, 4,500 staff, 23,000 managed Windows 11 devices.
 
 ---
 
