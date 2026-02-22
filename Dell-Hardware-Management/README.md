@@ -1,6 +1,6 @@
 # Dell iDRAC Hardware Management Automation
 
-PowerShell automation for Dell PowerEdge server management via iDRAC REST API, optimized for K-12 educational infrastructure with minimal downtime requirements.
+PowerShell automation for Dell PowerEdge server management via iDRAC REST API, optimized for educational infrastructure with minimal downtime requirements.
 
 ---
 
