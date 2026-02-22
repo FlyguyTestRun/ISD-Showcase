@@ -1,6 +1,6 @@
 # Power BI Dashboards, K-12 IT Operations
 
-Operational KPI dashboards built around how a large district runs at the start of each school year: account provisioning velocity, device assignment tracking, enrollment trends, and campus capacity. Data is synthetic at KISD-approximate scale (34,000 students, 23,000 Windows 11 devices, 22+ campuses).
+Operational KPI dashboards built around how a large district runs at the start of each school year: account provisioning velocity, device assignment tracking, enrollment trends, and campus capacity. Data is synthetic at KISD-approximate scale and built for live up-to-date reporting sample size (34,000 students, 23,000 Windows 11 devices, 22+ campuses).
 
 ---
 
@@ -13,16 +13,16 @@ Operational KPI dashboards built around how a large district runs at the start o
 ## Dashboard Pages
 
 ### Page 1, Enrollment Overview
-Enrollment by grade (K-12), grade band distribution (Elementary / Middle / High School), year-over-year change, and campus capacity utilization. Over-capacity campuses surface first. GradeSort integer ensures K sorts correctly. This is a common failure point in school district Power BI builds.
+Enrollment by grade (K-12), grade band distribution (Elementary / Middle / High School), year-over-year change, and campus capacity utilization. Over-capacity campuses surface first. GradeSort integer ensures K sorts correctly. Using common failure point in school district Power BI builds.
 
 ### Page 2, Provisioning and Identity
-Daily new student and staff accounts with the August surge visible. Monthly created vs. disabled comparison. Average provisioning time tracked against a 15-minute SLA. Password reset volume trending weekly. FERPA audit log completeness gauge (target 99%+, alert below 97%).
+Daily new student and staff accounts with the August surge visible. Monthly created vs. disabled comparison. Average provisioning time tracked against a 15-minute SLA. Password reset volume trending by weekly/daily measures with built in slicers for grade/school/year. FERPA audit log completeness gauge (target 99%+, alert below 97%).
 
 ### Page 3, Device Assignment (Grades K-12)
 Autopilot fleet status by campus: Assigned / Pending / Unassigned. Provisioning success rate trending over 26 weeks. Devices not seen in 7 and 30 days by grade band, loss and reimage candidates. New enrollment device assignment tracked through provisioning.
 
 ### Page 4, Campus Capacity
-Campus-level enrollment vs. capacity with utilization percent. Transfer in/out tracking by campus and month. Conditional formatting: >95% utilization flags red, >85% amber.
+Campus-level enrollment vs. capacity with utilization percent. Transfer in/out tracking by campus and month/week/day reporting. Conditional formatting: >95% utilization flags red, >85% amber.
 
 ---
 
