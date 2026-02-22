@@ -1,4 +1,4 @@
-# Wireless Validation Checklist (K-12)
+# Wireless Validation Checklist for K-12
 
 ## Coverage & Performance
 - [ ] Campus walkthrough completed (instructional spaces, auditorium, testing areas)
