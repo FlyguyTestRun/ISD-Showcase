@@ -1,4 +1,4 @@
-# K-12 Network Segmentation and Security Architecture
+# K-12 Network Segmentation and Example Security Architecture
 
 Network segmentation design and DHCP automation for a multi-campus K-12 district. The architecture follows the segmentation model common across large Texas ISDs: separate VLANs for students, staff, administrative systems, IoT/building controls, and guest/BYOD, with CIPA-compliant filtering on student traffic.
 
