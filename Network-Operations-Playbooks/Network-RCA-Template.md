@@ -1,4 +1,4 @@
-# Network Incident RCA Template
+# Network Incident RCA Template for Architectual Decision Records (ex ARD-ARCH-NET-001)
 
 ## 1) Incident Summary
 - Incident ID:
@@ -38,3 +38,5 @@
 - Success criteria:
 - Post-change verification steps:
 - 7-day follow-up check:
+
+*Summarized for ARD-ARCH-NET-001, my systems managment for network architecture decision making*
