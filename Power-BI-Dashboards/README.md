@@ -6,14 +6,6 @@ Operational KPI dashboards built around how a large district runs at the start o
 
 ## Dashboard Preview
 
-![Enrollment Overview: grade band distribution, capacity utilization, year-over-year change](./Dashboards/KISD-Page1-Enrollment.png)
-
-![Provisioning and Identity: August provisioning surge, SLA tracking, FERPA audit completeness](./Dashboards/KISD-Page2-Provisioning.png)
-
-![Device Assignment: Autopilot fleet status by campus, provisioning success rate over 26 weeks](./Dashboards/KISD-Page3-Devices.png)
-
-![Campus Capacity: enrollment vs. capacity per campus, transfer tracking, >95% red alert](./Dashboards/KISD-Page4-Capacity.png)
-
 [Full PDF export](./Dashboards/KISD-Dashboards.pdf) | [Source file: `Dashboards/KISD.pbix`](./Dashboards/KISD.pbix)
 
 ---
