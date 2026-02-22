@@ -18,7 +18,7 @@ Enrollment by grade (K-12), grade band distribution (Elementary / Middle / High 
 ### Page 2, Provisioning and Identity
 Daily new student and staff accounts with the August surge visible. Monthly created vs. disabled comparison. Average provisioning time tracked against a 15-minute SLA. Password reset volume trending weekly. FERPA audit log completeness gauge (target 99%+, alert below 97%).
 
-### Page 3, Device Assignment (Grades 5-12)
+### Page 3, Device Assignment (Grades K-12)
 Autopilot fleet status by campus: Assigned / Pending / Unassigned. Provisioning success rate trending over 26 weeks. Devices not seen in 7 and 30 days by grade band, loss and reimage candidates. New enrollment device assignment tracked through provisioning.
 
 ### Page 4, Campus Capacity
