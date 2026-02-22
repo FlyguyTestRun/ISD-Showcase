@@ -1,6 +1,6 @@
-# Operational KPIs (Systems + Network)
+# Operational KPIs for Live Updates of Sample Data (Systems + Network)
 
-Practical KPI datasets and generation script for operations dashboards and leadership reporting. Targets are calibrated to a large K-12 district operating a post-migration Microsoft stack: M365 A5, Intune-managed Windows 11 devices, Entra ID at full district scale, Canvas LMS.
+Practical KPI datasets and generation script for operations live dashboards and leadership for up-to-day reporting. Targets are calibrated to a large K-12 district operating a post-migration Microsoft stack: M365 A5, Intune-managed Windows 11 devices, Entra ID at full district scale, integration health monitoring checks for Canvas LMS.
 
 ## KPI Datasets
 
