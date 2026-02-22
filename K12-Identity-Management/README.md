@@ -1,7 +1,7 @@
 # K-12 Identity & Access Management Automation
 ## Student/Staff Lifecycle Management
 
-**Author:** Bryan Shaw
+**Author:** Bryan Shaw, all data and testing run in a sandbox enviorment for automation testing of "mock sample data"
 **Purpose:** Automated identity provisioning for K-12 educational environments
 **Compliance:** FERPA, student data protection, audit logging
 
