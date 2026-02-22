@@ -1,5 +1,5 @@
 #!/usr/bin/env pwsh
-# Validate network KPI readiness against operational thresholds.
+# Validate network KPI readiness against operational thresholds
 
 [CmdletBinding()]
 param(
