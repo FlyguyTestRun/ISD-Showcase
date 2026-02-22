@@ -23,7 +23,7 @@
 - Password reset volume trending weekly, highest-volume help desk category in most districts
 - FERPA audit log completeness gauge, target 99%+, alert below 97%
 
-**Autopilot Device Assignment (Grades 5-12)**
+**Autopilot Device Assignment**
 - Fleet size by campus, assignment status: Assigned / Pending / Unassigned
 - Autopilot provisioning success rate trending, 26-week view
 - Devices not seen in 7 days and 30 days by grade band, loss/reimage candidates
