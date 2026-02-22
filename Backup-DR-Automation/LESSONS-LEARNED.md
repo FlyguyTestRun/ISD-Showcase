@@ -5,7 +5,7 @@
 ### Mistake: Default 7-Day Retention Too Short
 
 **What Happened:**
-Configured database backups with default 7-day retention. Three weeks later, received request from administration to recover data from "two weeks ago" for an audit investigation.
+Configured database backups with default 7-day retention. Three weeks later, created request to recover data from "two weeks ago" for an audit investigation.
 
 **Impact:**
 Unable to fulfill data recovery request. Restore point had already been deleted per retention policy. Solution found in archived structure.
